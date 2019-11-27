@@ -1,4 +1,4 @@
-package com.naranjo.kristian.skeletonproject
+package com.naranjo.kristian.pokemonandroid
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.naranjo.kristian.skeletonproject
+package com.naranjo.kristian.pokemonandroid
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.naranjo.kristian.skeletonproject.util
+package com.naranjo.kristian.pokemonandroid.util
 
 import android.view.View
 import com.jakewharton.rxbinding3.view.clicks

@@ -1,8 +1,8 @@
-package com.naranjo.kristian.skeletonproject.ui
+package com.naranjo.kristian.pokemonandroid.ui
 
 import android.os.Bundle
-import com.naranjo.kristian.skeletonproject.R
-import com.naranjo.kristian.skeletonproject.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.R
+import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 
 class MainActivity : BaseActivity() {
 
@@ -10,8 +10,5 @@ class MainActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-    }
-
-    override fun bindViews() {
     }
 }

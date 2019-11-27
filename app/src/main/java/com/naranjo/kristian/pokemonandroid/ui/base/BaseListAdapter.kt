@@ -1,4 +1,4 @@
-package com.naranjo.kristian.skeletonproject.ui.base
+package com.naranjo.kristian.pokemonandroid.ui.base
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

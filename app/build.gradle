@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.naranjo.kristian.skeletonproject"
+        applicationId "com.naranjo.kristian.pokemonandroid"
         minSdkVersion 23
         targetSdkVersion 28
         versionCode 1
@@ -43,6 +43,12 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    def koin_version = "2.0.1"
+    // Koin AndroidX Scope features
+    implementation "org.koin:koin-androidx-scope:$koin_version"
+    // Koin AndroidX ViewModel features
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
