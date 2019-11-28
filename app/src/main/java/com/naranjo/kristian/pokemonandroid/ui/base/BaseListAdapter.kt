@@ -8,10 +8,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-abstract class BaseListAdapter<T, IdentifierType, IdentifierFunction : (T) -> IdentifierType>(getId: IdentifierFunction) :
+abstract class BaseListAdapter<T, IdentifierType>(getId: (T) -> IdentifierType) :
     ListAdapter<T, BaseViewHolder<T>>(BaseDiffUtil<T, IdentifierType>(getId)) {
 
-    override fun onBindViewHolder(holder: BaseViewHolder<T>, position: Int) = holder.bind(getItem(position))
+    override fun onBindViewHolder(holder: BaseViewHolder<T>, position: Int) = holder.bindData(getItem(position))
 
     class BaseDiffUtil<T, IdentifierType>(private val getId: (T) -> IdentifierType) : DiffUtil.ItemCallback<T>() {
 
@@ -23,13 +23,17 @@ abstract class BaseListAdapter<T, IdentifierType, IdentifierFunction : (T) -> Id
 }
 
 abstract class BaseViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
-    constructor(layoutResId: Int, parent: ViewGroup) : this(
+    constructor (layoutResId: Int, parent: ViewGroup) : this(
         LayoutInflater.from(parent.context).inflate(
             layoutResId,
             parent,
             false
         )
-    )
+    ) {
+        this.bindViews()
+    }
 
-    abstract fun bind(data: T)
+    abstract fun bindViews()
+
+    abstract fun bindData(data: T)
 }

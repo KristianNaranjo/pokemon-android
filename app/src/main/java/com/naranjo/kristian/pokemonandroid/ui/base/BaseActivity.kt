@@ -12,6 +12,8 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(layoutResId)
+
+        bindViews()
     }
 
     override fun onStop() {
@@ -19,4 +21,6 @@ abstract class BaseActivity : AppCompatActivity() {
 
         super.onStop()
     }
+
+    abstract fun bindViews()
 }
