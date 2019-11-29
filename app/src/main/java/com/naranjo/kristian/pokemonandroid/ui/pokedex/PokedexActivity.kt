@@ -1,10 +1,11 @@
-package com.naranjo.kristian.pokemonandroid.ui.main
+package com.naranjo.kristian.pokemonandroid.ui.pokedex
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.naranjo.kristian.pokemonandroid.R
+import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -20,7 +21,7 @@ class PokedexActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val pokemonListAdapter = PokedexAdapter()
+        val pokemonListAdapter = PokedexAdapter(::onPokedexEntryClicked)
         pokemonList.adapter = pokemonListAdapter
 
         viewModel.apply {
@@ -36,5 +37,9 @@ class PokedexActivity : BaseActivity() {
             layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
             addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt()))
         }
+    }
+
+    private fun onPokedexEntryClicked(pokemon: Pokemon) {
+
     }
 }

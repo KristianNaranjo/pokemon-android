@@ -1,6 +1,6 @@
 package com.naranjo.kristian.pokemonandroid.datastore
 
-data class Pokemon(val name: String, val types: List<Type>, val imageUrl: String)
+data class Pokemon(val name: String, val number: String, val types: List<Type>, val imageUrl: String)
 
 enum class Type {
     WATER,

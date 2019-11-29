@@ -1,4 +1,4 @@
-package com.naranjo.kristian.pokemonandroid.ui.main
+package com.naranjo.kristian.pokemonandroid.ui.pokedex
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

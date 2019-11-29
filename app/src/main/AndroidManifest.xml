@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:name=".PokemonApplication">
-        <activity android:name="com.naranjo.kristian.pokemonandroid.ui.main.PokedexActivity">
+        <activity android:name="com.naranjo.kristian.pokemonandroid.ui.pokedex.PokedexActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
