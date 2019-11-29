@@ -6,32 +6,35 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-class PokemonListActivity : BaseActivity() {
+class PokedexActivity : BaseActivity() {
 
     override val layoutResId: Int = R.layout.activity_main
 
-    private val viewModel: PokemonListViewModel by viewModel()
+    private val viewModel: PokedexViewModel by viewModel()
 
     private lateinit var pokemonList: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val pokemonListAdapter = PokemonListAdapter()
+        val pokemonListAdapter = PokedexAdapter()
         pokemonList.adapter = pokemonListAdapter
 
         viewModel.apply {
             pokemonListData.observe(
-                this@PokemonListActivity,
+                this@PokedexActivity,
                 Observer { pokemonListAdapter.submitList(it) }
             )
         }
     }
 
     override fun bindViews() {
-        pokemonList = findViewById(R.id.pokemon_list)
-        pokemonList.layoutManager = LinearLayoutManager(this@PokemonListActivity, RecyclerView.VERTICAL, false)
+        pokemonList = findViewById<RecyclerView>(R.id.pokemon_list).apply {
+            layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
+            addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt()))
+        }
     }
 }

@@ -3,7 +3,7 @@ package com.naranjo.kristian.pokemonandroid
 import android.app.Application
 import com.naranjo.kristian.pokemonandroid.datastore.MockPokemonDataStore
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
-import com.naranjo.kristian.pokemonandroid.ui.main.PokemonListViewModel
+import com.naranjo.kristian.pokemonandroid.ui.main.PokedexViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.context.startKoin
@@ -22,6 +22,6 @@ class PokemonApplication : Application() {
 
     private val pokemonModule = module {
         single<PokemonDataStore> { MockPokemonDataStore() }
-        viewModel { PokemonListViewModel(get()) }
+        viewModel { PokedexViewModel(get()) }
     }
 }

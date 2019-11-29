@@ -30,10 +30,10 @@ abstract class BaseViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemV
             false
         )
     ) {
-        this.bindViews()
+        this.initViews()
     }
 
-    abstract fun bindViews()
+    abstract fun initViews()
 
     abstract fun bindData(data: T)
 }
