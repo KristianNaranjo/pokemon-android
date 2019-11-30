@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/details_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/upper_left_triangle_red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1"/>
+
+    <TextView
+            android:id="@+id/details_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            tools:text="#001"/>
+
+    <TextView
+            android:id="@+id/details_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center"
+            tools:text="Alolan Ninetales"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="@id/details_image"
+            android:layout_marginBottom="24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/details_types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/details_name"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

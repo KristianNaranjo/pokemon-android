@@ -1,5 +1,6 @@
 package com.naranjo.kristian.pokemonandroid.ui.pokedex
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -7,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -40,6 +42,8 @@ class PokedexActivity : BaseActivity() {
     }
 
     private fun onPokedexEntryClicked(pokemon: Pokemon) {
-
+        val intent = Intent(this, PokemonDetailsActivity::class.java)
+        intent.putExtra(PokemonDetailsActivity.EXTRA_POKEMON, pokemon)
+        startActivity(intent)
     }
 }

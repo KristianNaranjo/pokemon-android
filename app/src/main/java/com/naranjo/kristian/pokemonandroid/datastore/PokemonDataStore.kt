@@ -7,8 +7,8 @@ interface PokemonDataStore {
 class MockPokemonDataStore : PokemonDataStore {
 
     override val pokemon: List<Pokemon> = listOf(
-        Pokemon("Charmander", "001", listOf(Type.FIRE), ""),
-        Pokemon("Bulbasaur", "002", listOf(Type.GRASS), ""),
-        Pokemon("Squirtle", "003", listOf(Type.WATER), "")
+        Pokemon("Charmander", "#001", listOf(Type.FIRE), ""),
+        Pokemon("Bulbasaur", "#002", listOf(Type.GRASS), ""),
+        Pokemon("Squirtle", "#003", listOf(Type.WATER), "")
     )
 }
