@@ -6,6 +6,7 @@ import coil.ImageLoader
 import coil.util.CoilUtils
 import com.naranjo.kristian.pokemonandroid.datastore.MockPokemonDataStore
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
+import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStoreImpl
 import com.naranjo.kristian.pokemonandroid.ui.pokedex.PokedexViewModel
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidContext
@@ -36,7 +37,7 @@ class PokemonApplication : Application() {
     }
 
     private val pokemonModule = module {
-        single<PokemonDataStore> { MockPokemonDataStore() }
+        single<PokemonDataStore> { PokemonDataStoreImpl(androidContext()) }
         viewModel { PokedexViewModel(get()) }
     }
 }
