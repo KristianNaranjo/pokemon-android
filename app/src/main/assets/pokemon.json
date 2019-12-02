@@ -5,7 +5,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/810.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/810.png"
   },
   {
     "id": "#002",
@@ -13,7 +13,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/811.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/811.png"
   },
   {
     "id": "#003",
@@ -21,7 +21,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/812.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/812.png"
   },
   {
     "id": "#004",
@@ -29,7 +29,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/813.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/813.png"
   },
   {
     "id": "#005",
@@ -37,7 +37,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/814.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/814.png"
   },
   {
     "id": "#006",
@@ -45,7 +45,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/815.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/815.png"
   },
   {
     "id": "#007",
@@ -53,7 +53,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/816.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/816.png"
   },
   {
     "id": "#008",
@@ -61,7 +61,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/817.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/817.png"
   },
   {
     "id": "#009",
@@ -69,7 +69,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/818.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/818.png"
   },
   {
     "id": "#010",
@@ -77,7 +77,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/824.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/824.png"
   },
   {
     "id": "#011",
@@ -86,7 +86,7 @@
       "bug",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/825.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/825.png"
   },
   {
     "id": "#012",
@@ -95,7 +95,7 @@
       "bug",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/826.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/826.png"
   },
   {
     "id": "#013",
@@ -103,7 +103,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/010.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/010.png"
   },
   {
     "id": "#014",
@@ -111,7 +111,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/011.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/011.png"
   },
   {
     "id": "#015",
@@ -120,7 +120,7 @@
       "bug",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/012.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/012.png"
   },
   {
     "id": "#016",
@@ -128,7 +128,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/736.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/736.png"
   },
   {
     "id": "#017",
@@ -137,7 +137,7 @@
       "bug",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/737.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/737.png"
   },
   {
     "id": "#018",
@@ -146,7 +146,7 @@
       "bug",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/738.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/738.png"
   },
   {
     "id": "#019",
@@ -155,7 +155,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/163.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/163.png"
   },
   {
     "id": "#020",
@@ -164,7 +164,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/164.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/164.png"
   },
   {
     "id": "#021",
@@ -172,7 +172,7 @@
     "types": [
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/821.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/821.png"
   },
   {
     "id": "#022",
@@ -180,7 +180,7 @@
     "types": [
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/822.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/822.png"
   },
   {
     "id": "#023",
@@ -189,7 +189,7 @@
       "flying",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/823.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/823.png"
   },
   {
     "id": "#024",
@@ -197,7 +197,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/819.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/819.png"
   },
   {
     "id": "#025",
@@ -205,7 +205,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/820.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/820.png"
   },
   {
     "id": "#026",
@@ -214,7 +214,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/519.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/519.png"
   },
   {
     "id": "#027",
@@ -223,7 +223,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/520.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/520.png"
   },
   {
     "id": "#028",
@@ -232,7 +232,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/521.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/521.png"
   },
   {
     "id": "#029",
@@ -240,7 +240,7 @@
     "types": [
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/827.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/827.png"
   },
   {
     "id": "#030",
@@ -248,7 +248,7 @@
     "types": [
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/828.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/828.png"
   },
   {
     "id": "#031",
@@ -257,7 +257,7 @@
       "dark",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/263-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/263-g.png"
   },
   {
     "id": "#032",
@@ -266,7 +266,7 @@
       "dark",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/264-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/264-g.png"
   },
   {
     "id": "#033",
@@ -275,7 +275,7 @@
       "dark",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/862.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/862.png"
   },
   {
     "id": "#034",
@@ -283,7 +283,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/831.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/831.png"
   },
   {
     "id": "#035",
@@ -291,7 +291,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/832.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/832.png"
   },
   {
     "id": "#036",
@@ -300,7 +300,7 @@
       "water",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/270.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/270.png"
   },
   {
     "id": "#037",
@@ -309,7 +309,7 @@
       "water",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/271.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/271.png"
   },
   {
     "id": "#038",
@@ -318,7 +318,7 @@
       "water",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/272.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/272.png"
   },
   {
     "id": "#039",
@@ -326,7 +326,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/273.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/273.png"
   },
   {
     "id": "#040",
@@ -335,7 +335,7 @@
       "grass",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/274.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/274.png"
   },
   {
     "id": "#041",
@@ -344,7 +344,7 @@
       "grass",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/275.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/275.png"
   },
   {
     "id": "#042",
@@ -352,7 +352,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/833.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/833.png"
   },
   {
     "id": "#043",
@@ -361,7 +361,7 @@
       "water",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/834.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/834.png"
   },
   {
     "id": "#044",
@@ -369,7 +369,7 @@
     "types": [
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/509.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/509.png"
   },
   {
     "id": "#045",
@@ -377,7 +377,7 @@
     "types": [
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/510.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/510.png"
   },
   {
     "id": "#046",
@@ -385,7 +385,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/835.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/835.png"
   },
   {
     "id": "#047",
@@ -393,7 +393,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/836.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/836.png"
   },
   {
     "id": "#048",
@@ -401,7 +401,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/659.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/659.png"
   },
   {
     "id": "#049",
@@ -410,7 +410,7 @@
       "normal",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/660.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/660.png"
   },
   {
     "id": "#050",
@@ -418,7 +418,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/572.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/572.png"
   },
   {
     "id": "#051",
@@ -426,7 +426,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/573.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/573.png"
   },
   {
     "id": "#052",
@@ -434,7 +434,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/761.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/761.png"
   },
   {
     "id": "#053",
@@ -442,7 +442,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/762.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/762.png"
   },
   {
     "id": "#054",
@@ -450,7 +450,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/763.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/763.png"
   },
   {
     "id": "#055",
@@ -459,7 +459,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/043.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/043.png"
   },
   {
     "id": "#056",
@@ -468,7 +468,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/044.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/044.png"
   },
   {
     "id": "#057",
@@ -477,7 +477,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/045.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/045.png"
   },
   {
     "id": "#058",
@@ -485,7 +485,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/182.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/182.png"
   },
   {
     "id": "#059",
@@ -494,7 +494,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/406.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/406.png"
   },
   {
     "id": "#060",
@@ -503,7 +503,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/315.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/315.png"
   },
   {
     "id": "#061",
@@ -512,7 +512,7 @@
       "grass",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/407.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/407.png"
   },
   {
     "id": "#062",
@@ -521,7 +521,7 @@
       "water",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/278.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/278.png"
   },
   {
     "id": "#063",
@@ -530,7 +530,7 @@
       "water",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/279.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/279.png"
   },
   {
     "id": "#064",
@@ -539,7 +539,7 @@
       "bug",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/595.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/595.png"
   },
   {
     "id": "#065",
@@ -548,7 +548,7 @@
       "bug",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/596.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/596.png"
   },
   {
     "id": "#066",
@@ -556,7 +556,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/309.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/309.png"
   },
   {
     "id": "#067",
@@ -564,7 +564,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/310.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/310.png"
   },
   {
     "id": "#068",
@@ -572,7 +572,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/037.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/037.png"
   },
   {
     "id": "#069",
@@ -580,7 +580,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/038.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/038.png"
   },
   {
     "id": "#070",
@@ -588,7 +588,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/058.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/058.png"
   },
   {
     "id": "#071",
@@ -596,7 +596,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/059.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/059.png"
   },
   {
     "id": "#072",
@@ -604,7 +604,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/582.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/582.png"
   },
   {
     "id": "#073",
@@ -612,7 +612,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/583.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/583.png"
   },
   {
     "id": "#074",
@@ -620,7 +620,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/584.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/584.png"
   },
   {
     "id": "#075",
@@ -629,7 +629,7 @@
       "ice",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/220.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/220.png"
   },
   {
     "id": "#076",
@@ -638,7 +638,7 @@
       "ice",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/221.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/221.png"
   },
   {
     "id": "#077",
@@ -647,7 +647,7 @@
       "ice",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/473.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/473.png"
   },
   {
     "id": "#078",
@@ -656,7 +656,7 @@
       "ice",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/225.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/225.png"
   },
   {
     "id": "#079",
@@ -664,7 +664,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/361.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/361.png"
   },
   {
     "id": "#080",
@@ -672,7 +672,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/362.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/362.png"
   },
   {
     "id": "#081",
@@ -681,7 +681,7 @@
       "ice",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/478.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/478.png"
   },
   {
     "id": "#082",
@@ -690,7 +690,7 @@
       "ground",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/343.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/343.png"
   },
   {
     "id": "#083",
@@ -699,7 +699,7 @@
       "ground",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/344.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/344.png"
   },
   {
     "id": "#084",
@@ -707,7 +707,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/749.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/749.png"
   },
   {
     "id": "#085",
@@ -715,7 +715,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/750.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/750.png"
   },
   {
     "id": "#086",
@@ -724,7 +724,7 @@
       "bug",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/557.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/557.png"
   },
   {
     "id": "#087",
@@ -733,7 +733,7 @@
       "bug",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/558.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/558.png"
   },
   {
     "id": "#088",
@@ -742,7 +742,7 @@
       "ground",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/622.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/622.png"
   },
   {
     "id": "#089",
@@ -751,7 +751,7 @@
       "ground",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/623.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/623.png"
   },
   {
     "id": "#090",
@@ -759,7 +759,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/517.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/517.png"
   },
   {
     "id": "#091",
@@ -767,7 +767,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/518.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/518.png"
   },
   {
     "id": "#092",
@@ -776,7 +776,7 @@
       "psychic",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/177.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/177.png"
   },
   {
     "id": "#093",
@@ -785,7 +785,7 @@
       "psychic",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/178.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/178.png"
   },
   {
     "id": "#094",
@@ -794,7 +794,7 @@
       "normal",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/759.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/759.png"
   },
   {
     "id": "#095",
@@ -803,7 +803,7 @@
       "normal",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/760.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/760.png"
   },
   {
     "id": "#096",
@@ -812,7 +812,7 @@
       "grass",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/459.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/459.png"
   },
   {
     "id": "#097",
@@ -821,7 +821,7 @@
       "grass",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/460.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/460.png"
   },
   {
     "id": "#098",
@@ -829,7 +829,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/098.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/098.png"
   },
   {
     "id": "#099",
@@ -837,7 +837,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/099.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/099.png"
   },
   {
     "id": "#100",
@@ -846,7 +846,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/194.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/194.png"
   },
   {
     "id": "#101",
@@ -855,7 +855,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/195.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/195.png"
   },
   {
     "id": "#102",
@@ -863,7 +863,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/341.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/341.png"
   },
   {
     "id": "#103",
@@ -872,7 +872,7 @@
       "water",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/342.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/342.png"
   },
   {
     "id": "#104",
@@ -881,7 +881,7 @@
       "bug",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/290.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/290.png"
   },
   {
     "id": "#105",
@@ -890,7 +890,7 @@
       "bug",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/291.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/291.png"
   },
   {
     "id": "#106",
@@ -899,7 +899,7 @@
       "bug",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/292.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/292.png"
   },
   {
     "id": "#107",
@@ -907,7 +907,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/236.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/236.png"
   },
   {
     "id": "#108",
@@ -915,7 +915,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/106.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/106.png"
   },
   {
     "id": "#109",
@@ -923,7 +923,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/107.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/107.png"
   },
   {
     "id": "#110",
@@ -931,7 +931,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/237.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/237.png"
   },
   {
     "id": "#111",
@@ -939,7 +939,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/674.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/674.png"
   },
   {
     "id": "#112",
@@ -948,7 +948,7 @@
       "fighting",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/675.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/675.png"
   },
   {
     "id": "#113",
@@ -956,7 +956,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/599.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/599.png"
   },
   {
     "id": "#114",
@@ -964,7 +964,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/600.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/600.png"
   },
   {
     "id": "#115",
@@ -972,7 +972,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/601.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/601.png"
   },
   {
     "id": "#116",
@@ -981,7 +981,7 @@
       "bug",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/415.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/415.png"
   },
   {
     "id": "#117",
@@ -990,7 +990,7 @@
       "bug",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/416.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/416.png"
   },
   {
     "id": "#118",
@@ -999,7 +999,7 @@
       "steel",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/436.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/436.png"
   },
   {
     "id": "#119",
@@ -1008,7 +1008,7 @@
       "steel",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/437.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/437.png"
   },
   {
     "id": "#120",
@@ -1017,7 +1017,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/280.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/280.png"
   },
   {
     "id": "#121",
@@ -1026,7 +1026,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/281.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/281.png"
   },
   {
     "id": "#122",
@@ -1035,7 +1035,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/282.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/282.png"
   },
   {
     "id": "#123",
@@ -1044,7 +1044,7 @@
       "psychic",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/475.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/475.png"
   },
   {
     "id": "#124",
@@ -1053,7 +1053,7 @@
       "ghost",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/425.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/425.png"
   },
   {
     "id": "#125",
@@ -1062,7 +1062,7 @@
       "ghost",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/426.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/426.png"
   },
   {
     "id": "#126",
@@ -1070,7 +1070,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/829.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/829.png"
   },
   {
     "id": "#127",
@@ -1078,7 +1078,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/830.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/830.png"
   },
   {
     "id": "#128",
@@ -1086,7 +1086,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/420.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/420.png"
   },
   {
     "id": "#129",
@@ -1094,7 +1094,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/421.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/421.png"
   },
   {
     "id": "#130",
@@ -1103,7 +1103,7 @@
       "poison",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/434.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/434.png"
   },
   {
     "id": "#131",
@@ -1112,7 +1112,7 @@
       "poison",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/435.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/435.png"
   },
   {
     "id": "#132",
@@ -1120,7 +1120,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/535.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/535.png"
   },
   {
     "id": "#133",
@@ -1129,7 +1129,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/536.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/536.png"
   },
   {
     "id": "#134",
@@ -1138,7 +1138,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/537.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/537.png"
   },
   {
     "id": "#135",
@@ -1146,7 +1146,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/355.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/355.png"
   },
   {
     "id": "#136",
@@ -1154,7 +1154,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/356.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/356.png"
   },
   {
     "id": "#137",
@@ -1162,7 +1162,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/477.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/477.png"
   },
   {
     "id": "#138",
@@ -1170,7 +1170,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/066.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/066.png"
   },
   {
     "id": "#139",
@@ -1178,7 +1178,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/067.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/067.png"
   },
   {
     "id": "#140",
@@ -1186,7 +1186,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/068.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/068.png"
   },
   {
     "id": "#141",
@@ -1195,7 +1195,7 @@
       "ghost",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/092.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/092.png"
   },
   {
     "id": "#142",
@@ -1204,7 +1204,7 @@
       "ghost",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/093.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/093.png"
   },
   {
     "id": "#143",
@@ -1213,7 +1213,7 @@
       "ghost",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/094.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/094.png"
   },
   {
     "id": "#144",
@@ -1221,7 +1221,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/129.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/129.png"
   },
   {
     "id": "#145",
@@ -1230,7 +1230,7 @@
       "water",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/130.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/130.png"
   },
   {
     "id": "#146",
@@ -1238,7 +1238,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/118.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/118.png"
   },
   {
     "id": "#147",
@@ -1246,7 +1246,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/119.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/119.png"
   },
   {
     "id": "#148",
@@ -1254,7 +1254,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/223.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/223.png"
   },
   {
     "id": "#149",
@@ -1262,7 +1262,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/224.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/224.png"
   },
   {
     "id": "#150",
@@ -1270,7 +1270,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/090.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/090.png"
   },
   {
     "id": "#151",
@@ -1279,7 +1279,7 @@
       "water",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/091.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/091.png"
   },
   {
     "id": "#152",
@@ -1287,7 +1287,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/349.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/349.png"
   },
   {
     "id": "#153",
@@ -1295,7 +1295,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/350.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/350.png"
   },
   {
     "id": "#154",
@@ -1303,7 +1303,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/550.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/550.png"
   },
   {
     "id": "#155",
@@ -1311,7 +1311,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/746.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/746.png"
   },
   {
     "id": "#156",
@@ -1319,7 +1319,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/771.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/771.png"
   },
   {
     "id": "#157",
@@ -1327,7 +1327,7 @@
     "types": [
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/568.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/568.png"
   },
   {
     "id": "#158",
@@ -1335,7 +1335,7 @@
     "types": [
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/569.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/569.png"
   },
   {
     "id": "#159",
@@ -1344,7 +1344,7 @@
       "fire",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/850.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/850.png"
   },
   {
     "id": "#160",
@@ -1353,7 +1353,7 @@
       "fire",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/851.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/851.png"
   },
   {
     "id": "#161",
@@ -1361,7 +1361,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/837.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/837.png"
   },
   {
     "id": "#162",
@@ -1370,7 +1370,7 @@
       "rock",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/838.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/838.png"
   },
   {
     "id": "#163",
@@ -1379,7 +1379,7 @@
       "rock",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/839.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/839.png"
   },
   {
     "id": "#164",
@@ -1387,7 +1387,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/050.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/050.png"
   },
   {
     "id": "#165",
@@ -1395,7 +1395,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/051.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/051.png"
   },
   {
     "id": "#166",
@@ -1403,7 +1403,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/529.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/529.png"
   },
   {
     "id": "#167",
@@ -1412,7 +1412,7 @@
       "ground",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/530.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/530.png"
   },
   {
     "id": "#168",
@@ -1420,7 +1420,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/524.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/524.png"
   },
   {
     "id": "#169",
@@ -1428,7 +1428,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/525.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/525.png"
   },
   {
     "id": "#170",
@@ -1436,7 +1436,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/526.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/526.png"
   },
   {
     "id": "#171",
@@ -1444,7 +1444,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/532.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/532.png"
   },
   {
     "id": "#172",
@@ -1452,7 +1452,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/533.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/533.png"
   },
   {
     "id": "#173",
@@ -1460,7 +1460,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/534.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/534.png"
   },
   {
     "id": "#174",
@@ -1469,7 +1469,7 @@
       "psychic",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/527.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/527.png"
   },
   {
     "id": "#175",
@@ -1478,7 +1478,7 @@
       "psychic",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/528.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/528.png"
   },
   {
     "id": "#176",
@@ -1487,7 +1487,7 @@
       "flying",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/714.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/714.png"
   },
   {
     "id": "#177",
@@ -1496,7 +1496,7 @@
       "flying",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/715.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/715.png"
   },
   {
     "id": "#178",
@@ -1505,7 +1505,7 @@
       "rock",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/095.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/095.png"
   },
   {
     "id": "#179",
@@ -1514,7 +1514,7 @@
       "steel",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/208.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/208.png"
   },
   {
     "id": "#180",
@@ -1522,7 +1522,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/846.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/846.png"
   },
   {
     "id": "#181",
@@ -1530,7 +1530,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/847.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/847.png"
   },
   {
     "id": "#182",
@@ -1538,7 +1538,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/052-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/052-g.png"
   },
   {
     "id": "#183",
@@ -1546,7 +1546,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/863.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/863.png"
   },
   {
     "id": "#184",
@@ -1554,7 +1554,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/053.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/053.png"
   },
   {
     "id": "#185",
@@ -1562,7 +1562,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/868.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/868.png"
   },
   {
     "id": "#186",
@@ -1570,7 +1570,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/869.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/869.png"
   },
   {
     "id": "#187",
@@ -1579,7 +1579,7 @@
       "bug",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/742.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/742.png"
   },
   {
     "id": "#188",
@@ -1588,7 +1588,7 @@
       "bug",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/743.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/743.png"
   },
   {
     "id": "#189",
@@ -1597,7 +1597,7 @@
       "grass",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/597.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/597.png"
   },
   {
     "id": "#190",
@@ -1606,7 +1606,7 @@
       "grass",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/598.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/598.png"
   },
   {
     "id": "#191",
@@ -1615,7 +1615,7 @@
       "ghost",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/710.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/710.png"
   },
   {
     "id": "#192",
@@ -1624,7 +1624,7 @@
       "ghost",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/711.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/711.png"
   },
   {
     "id": "#193",
@@ -1632,7 +1632,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/172.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/172.png"
   },
   {
     "id": "#194",
@@ -1640,7 +1640,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/025.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/025.png"
   },
   {
     "id": "#195",
@@ -1648,7 +1648,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/026.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/026.png"
   },
   {
     "id": "#196",
@@ -1656,7 +1656,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/133.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/133.png"
   },
   {
     "id": "#197",
@@ -1664,7 +1664,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/134.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/134.png"
   },
   {
     "id": "#198",
@@ -1672,7 +1672,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/135.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/135.png"
   },
   {
     "id": "#199",
@@ -1680,7 +1680,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/136.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/136.png"
   },
   {
     "id": "#200",
@@ -1688,7 +1688,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/196.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/196.png"
   },
   {
     "id": "#201",
@@ -1696,7 +1696,7 @@
     "types": [
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/197.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/197.png"
   },
   {
     "id": "#202",
@@ -1704,7 +1704,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/470.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/470.png"
   },
   {
     "id": "#203",
@@ -1712,7 +1712,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/471.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/471.png"
   },
   {
     "id": "#204",
@@ -1720,7 +1720,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/700.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/700.png"
   },
   {
     "id": "#205",
@@ -1729,7 +1729,7 @@
       "grass",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/840.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/840.png"
   },
   {
     "id": "#206",
@@ -1738,7 +1738,7 @@
       "grass",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/841.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/841.png"
   },
   {
     "id": "#207",
@@ -1747,7 +1747,7 @@
       "grass",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/842.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/842.png"
   },
   {
     "id": "#208",
@@ -1755,7 +1755,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/677.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/677.png"
   },
   {
     "id": "#209",
@@ -1763,7 +1763,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/678.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/678.png"
   },
   {
     "id": "#210",
@@ -1771,7 +1771,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/684.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/684.png"
   },
   {
     "id": "#211",
@@ -1779,7 +1779,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/685.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/685.png"
   },
   {
     "id": "#212",
@@ -1787,7 +1787,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/682.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/682.png"
   },
   {
     "id": "#213",
@@ -1795,7 +1795,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/683.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/683.png"
   },
   {
     "id": "#214",
@@ -1804,7 +1804,7 @@
       "water",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/751.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/751.png"
   },
   {
     "id": "#215",
@@ -1813,7 +1813,7 @@
       "water",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/752.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/752.png"
   },
   {
     "id": "#216",
@@ -1821,7 +1821,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/360.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/360.png"
   },
   {
     "id": "#217",
@@ -1829,7 +1829,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/202.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/202.png"
   },
   {
     "id": "#218",
@@ -1837,7 +1837,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/083-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/083-g.png"
   },
   {
     "id": "#219",
@@ -1845,7 +1845,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/865.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/865.png"
   },
   {
     "id": "#220",
@@ -1854,7 +1854,7 @@
       "water",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/170.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/170.png"
   },
   {
     "id": "#221",
@@ -1863,7 +1863,7 @@
       "water",
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/171.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/171.png"
   },
   {
     "id": "#222",
@@ -1872,7 +1872,7 @@
       "poison",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/453.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/453.png"
   },
   {
     "id": "#223",
@@ -1881,7 +1881,7 @@
       "poison",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/454.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/454.png"
   },
   {
     "id": "#224",
@@ -1890,7 +1890,7 @@
       "dark",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/559.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/559.png"
   },
   {
     "id": "#225",
@@ -1899,7 +1899,7 @@
       "dark",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/560.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/560.png"
   },
   {
     "id": "#226",
@@ -1908,7 +1908,7 @@
       "ground",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/618-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/618-g.png"
   },
   {
     "id": "#227",
@@ -1917,7 +1917,7 @@
       "bug",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/213.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/213.png"
   },
   {
     "id": "#228",
@@ -1926,7 +1926,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/339.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/339.png"
   },
   {
     "id": "#229",
@@ -1935,7 +1935,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/340.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/340.png"
   },
   {
     "id": "#230",
@@ -1943,7 +1943,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/422.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/422.png"
   },
   {
     "id": "#231",
@@ -1952,7 +1952,7 @@
       "water",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/423.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/423.png"
   },
   {
     "id": "#232",
@@ -1961,7 +1961,7 @@
       "bug",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/767.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/767.png"
   },
   {
     "id": "#233",
@@ -1970,7 +1970,7 @@
       "bug",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/768.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/768.png"
   },
   {
     "id": "#234",
@@ -1979,7 +1979,7 @@
       "rock",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/688.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/688.png"
   },
   {
     "id": "#235",
@@ -1988,7 +1988,7 @@
       "rock",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/689.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/689.png"
   },
   {
     "id": "#236",
@@ -1996,7 +1996,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/222-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/222-g.png"
   },
   {
     "id": "#237",
@@ -2004,7 +2004,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/864.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/864.png"
   },
   {
     "id": "#238",
@@ -2013,7 +2013,7 @@
       "dark",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/859.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/859.png"
   },
   {
     "id": "#239",
@@ -2022,7 +2022,7 @@
       "dark",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/860.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/860.png"
   },
   {
     "id": "#240",
@@ -2031,7 +2031,7 @@
       "dark",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/861.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/861.png"
   },
   {
     "id": "#241",
@@ -2039,7 +2039,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/856.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/856.png"
   },
   {
     "id": "#242",
@@ -2047,7 +2047,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/857.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/857.png"
   },
   {
     "id": "#243",
@@ -2056,7 +2056,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/858.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/858.png"
   },
   {
     "id": "#244",
@@ -2065,7 +2065,7 @@
       "poison",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/757.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/757.png"
   },
   {
     "id": "#245",
@@ -2074,7 +2074,7 @@
       "poison",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/758.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/758.png"
   },
   {
     "id": "#246",
@@ -2083,7 +2083,7 @@
       "dark",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/624.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/624.png"
   },
   {
     "id": "#247",
@@ -2092,7 +2092,7 @@
       "dark",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/625.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/625.png"
   },
   {
     "id": "#248",
@@ -2100,7 +2100,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/538.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/538.png"
   },
   {
     "id": "#249",
@@ -2108,7 +2108,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/539.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/539.png"
   },
   {
     "id": "#250",
@@ -2116,7 +2116,7 @@
     "types": [
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/109.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/109.png"
   },
   {
     "id": "#251",
@@ -2125,7 +2125,7 @@
       "poison",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/110-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/110-g.png"
   },
   {
     "id": "#252",
@@ -2133,7 +2133,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/438.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/438.png"
   },
   {
     "id": "#253",
@@ -2141,7 +2141,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/185.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/185.png"
   },
   {
     "id": "#254",
@@ -2149,7 +2149,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/173.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/173.png"
   },
   {
     "id": "#255",
@@ -2157,7 +2157,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/035.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/035.png"
   },
   {
     "id": "#256",
@@ -2165,7 +2165,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/036.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/036.png"
   },
   {
     "id": "#257",
@@ -2173,7 +2173,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/175.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/175.png"
   },
   {
     "id": "#258",
@@ -2182,7 +2182,7 @@
       "fairy",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/176.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/176.png"
   },
   {
     "id": "#259",
@@ -2191,7 +2191,7 @@
       "fairy",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/468.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/468.png"
   },
   {
     "id": "#260",
@@ -2199,7 +2199,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/446.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/446.png"
   },
   {
     "id": "#261",
@@ -2207,7 +2207,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/143.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/143.png"
   },
   {
     "id": "#262",
@@ -2216,7 +2216,7 @@
       "grass",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/546.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/546.png"
   },
   {
     "id": "#263",
@@ -2225,7 +2225,7 @@
       "grass",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/547.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/547.png"
   },
   {
     "id": "#264",
@@ -2234,7 +2234,7 @@
       "ground",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/111.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/111.png"
   },
   {
     "id": "#265",
@@ -2243,7 +2243,7 @@
       "ground",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/112.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/112.png"
   },
   {
     "id": "#266",
@@ -2252,7 +2252,7 @@
       "ground",
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/464.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/464.png"
   },
   {
     "id": "#267",
@@ -2260,7 +2260,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/574.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/574.png"
   },
   {
     "id": "#268",
@@ -2268,7 +2268,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/575.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/575.png"
   },
   {
     "id": "#269",
@@ -2276,7 +2276,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/576.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/576.png"
   },
   {
     "id": "#270",
@@ -2284,7 +2284,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/577.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/577.png"
   },
   {
     "id": "#271",
@@ -2292,7 +2292,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/578.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/578.png"
   },
   {
     "id": "#272",
@@ -2300,7 +2300,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/579.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/579.png"
   },
   {
     "id": "#273",
@@ -2308,7 +2308,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/588.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/588.png"
   },
   {
     "id": "#274",
@@ -2317,7 +2317,7 @@
       "bug",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/589.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/589.png"
   },
   {
     "id": "#275",
@@ -2325,7 +2325,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/616.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/616.png"
   },
   {
     "id": "#276",
@@ -2333,7 +2333,7 @@
     "types": [
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/617.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/617.png"
   },
   {
     "id": "#277",
@@ -2341,7 +2341,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/605.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/605.png"
   },
   {
     "id": "#278",
@@ -2349,7 +2349,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/606.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/606.png"
   },
   {
     "id": "#279",
@@ -2357,7 +2357,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/613.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/613.png"
   },
   {
     "id": "#280",
@@ -2365,7 +2365,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/614.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/614.png"
   },
   {
     "id": "#281",
@@ -2374,7 +2374,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/627.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/627.png"
   },
   {
     "id": "#282",
@@ -2383,7 +2383,7 @@
       "normal",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/628.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/628.png"
   },
   {
     "id": "#283",
@@ -2392,7 +2392,7 @@
       "dark",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/629.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/629.png"
   },
   {
     "id": "#284",
@@ -2401,7 +2401,7 @@
       "dark",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/630.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/630.png"
   },
   {
     "id": "#285",
@@ -2410,7 +2410,7 @@
       "poison",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/451.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/451.png"
   },
   {
     "id": "#286",
@@ -2419,7 +2419,7 @@
       "poison",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/452.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/452.png"
   },
   {
     "id": "#287",
@@ -2428,7 +2428,7 @@
       "ghost",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/607.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/607.png"
   },
   {
     "id": "#288",
@@ -2437,7 +2437,7 @@
       "ghost",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/608.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/608.png"
   },
   {
     "id": "#289",
@@ -2446,7 +2446,7 @@
       "ghost",
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/609.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/609.png"
   },
   {
     "id": "#290",
@@ -2455,7 +2455,7 @@
       "dark",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/686.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/686.png"
   },
   {
     "id": "#291",
@@ -2464,7 +2464,7 @@
       "dark",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/687.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/687.png"
   },
   {
     "id": "#292",
@@ -2473,7 +2473,7 @@
       "dark",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/215.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/215.png"
   },
   {
     "id": "#293",
@@ -2482,7 +2482,7 @@
       "dark",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/461.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/461.png"
   },
   {
     "id": "#294",
@@ -2491,7 +2491,7 @@
       "dark",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/302.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/302.png"
   },
   {
     "id": "#295",
@@ -2500,7 +2500,7 @@
       "steel",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/303.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/303.png"
   },
   {
     "id": "#296",
@@ -2508,7 +2508,7 @@
     "types": [
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/556.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/556.png"
   },
   {
     "id": "#297",
@@ -2517,7 +2517,7 @@
       "psychic",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/561.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/561.png"
   },
   {
     "id": "#298",
@@ -2525,7 +2525,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/447.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/447.png"
   },
   {
     "id": "#299",
@@ -2534,7 +2534,7 @@
       "fighting",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/448.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/448.png"
   },
   {
     "id": "#300",
@@ -2542,7 +2542,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/324.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/324.png"
   },
   {
     "id": "#301",
@@ -2551,7 +2551,7 @@
       "ghost",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/778.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/778.png"
   },
   {
     "id": "#302",
@@ -2559,7 +2559,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/878.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/878.png"
   },
   {
     "id": "#303",
@@ -2567,7 +2567,7 @@
     "types": [
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/879.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/879.png"
   },
   {
     "id": "#304",
@@ -2576,7 +2576,7 @@
       "water",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/211.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/211.png"
   },
   {
     "id": "#305",
@@ -2585,7 +2585,7 @@
       "water",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/592.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/592.png"
   },
   {
     "id": "#306",
@@ -2594,7 +2594,7 @@
       "water",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/593.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/593.png"
   },
   {
     "id": "#307",
@@ -2603,7 +2603,7 @@
       "poison",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/747.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/747.png"
   },
   {
     "id": "#308",
@@ -2612,7 +2612,7 @@
       "poison",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/748.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/748.png"
   },
   {
     "id": "#309",
@@ -2621,7 +2621,7 @@
       "flying",
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/845.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/845.png"
   },
   {
     "id": "#310",
@@ -2630,7 +2630,7 @@
       "electric",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/848.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/848.png"
   },
   {
     "id": "#311",
@@ -2639,7 +2639,7 @@
       "electric",
       "poison"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/849.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/849.png"
   },
   {
     "id": "#312",
@@ -2647,7 +2647,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/843.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/843.png"
   },
   {
     "id": "#313",
@@ -2655,7 +2655,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/844.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/844.png"
   },
   {
     "id": "#314",
@@ -2663,7 +2663,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/449.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/449.png"
   },
   {
     "id": "#315",
@@ -2671,7 +2671,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/450.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/450.png"
   },
   {
     "id": "#316",
@@ -2680,7 +2680,7 @@
       "bug",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/632.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/632.png"
   },
   {
     "id": "#317",
@@ -2688,7 +2688,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/631.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/631.png"
   },
   {
     "id": "#318",
@@ -2697,7 +2697,7 @@
       "electric",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/694.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/694.png"
   },
   {
     "id": "#319",
@@ -2706,7 +2706,7 @@
       "electric",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/695.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/695.png"
   },
   {
     "id": "#320",
@@ -2715,7 +2715,7 @@
       "fighting",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/701.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/701.png"
   },
   {
     "id": "#321",
@@ -2723,7 +2723,7 @@
     "types": [
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/328.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/328.png"
   },
   {
     "id": "#322",
@@ -2732,7 +2732,7 @@
       "ground",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/329.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/329.png"
   },
   {
     "id": "#323",
@@ -2741,7 +2741,7 @@
       "ground",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/330.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/330.png"
   },
   {
     "id": "#324",
@@ -2749,7 +2749,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/610.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/610.png"
   },
   {
     "id": "#325",
@@ -2757,7 +2757,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/611.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/611.png"
   },
   {
     "id": "#326",
@@ -2765,7 +2765,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/612.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/612.png"
   },
   {
     "id": "#327",
@@ -2774,7 +2774,7 @@
       "ground",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/562-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/562-g.png"
   },
   {
     "id": "#328",
@@ -2783,7 +2783,7 @@
       "ground",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/867.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/867.png"
   },
   {
     "id": "#329",
@@ -2791,7 +2791,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/563.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/563.png"
   },
   {
     "id": "#330",
@@ -2800,7 +2800,7 @@
       "steel",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/679.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/679.png"
   },
   {
     "id": "#331",
@@ -2809,7 +2809,7 @@
       "steel",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/680.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/680.png"
   },
   {
     "id": "#332",
@@ -2818,7 +2818,7 @@
       "steel",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/681.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/681.png"
   },
   {
     "id": "#333",
@@ -2826,7 +2826,7 @@
     "types": [
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/077-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/077-g.png"
   },
   {
     "id": "#334",
@@ -2835,7 +2835,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/078-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/078-g.png"
   },
   {
     "id": "#335",
@@ -2843,7 +2843,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/854.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/854.png"
   },
   {
     "id": "#336",
@@ -2851,7 +2851,7 @@
     "types": [
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/855.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/855.png"
   },
   {
     "id": "#337",
@@ -2860,7 +2860,7 @@
       "psychic",
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/876.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/876.png"
   },
   {
     "id": "#338",
@@ -2869,7 +2869,7 @@
       "ghost",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/708.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/708.png"
   },
   {
     "id": "#339",
@@ -2878,7 +2878,7 @@
       "ghost",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/709.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/709.png"
   },
   {
     "id": "#340",
@@ -2887,7 +2887,7 @@
       "grass",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/755.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/755.png"
   },
   {
     "id": "#341",
@@ -2896,7 +2896,7 @@
       "grass",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/756.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/756.png"
   },
   {
     "id": "#342",
@@ -2905,7 +2905,7 @@
       "normal",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/765.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/765.png"
   },
   {
     "id": "#343",
@@ -2913,7 +2913,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/766.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/766.png"
   },
   {
     "id": "#344",
@@ -2922,7 +2922,7 @@
       "electric",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/877.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/877.png"
   },
   {
     "id": "#345",
@@ -2930,7 +2930,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/870.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/870.png"
   },
   {
     "id": "#346",
@@ -2939,7 +2939,7 @@
       "normal",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/780.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/780.png"
   },
   {
     "id": "#347",
@@ -2948,7 +2948,7 @@
       "fire",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/776.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/776.png"
   },
   {
     "id": "#348",
@@ -2957,7 +2957,7 @@
       "electric",
       "steel"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/777.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/777.png"
   },
   {
     "id": "#349",
@@ -2966,7 +2966,7 @@
       "ice",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/872.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/872.png"
   },
   {
     "id": "#350",
@@ -2975,7 +2975,7 @@
       "ice",
       "bug"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/873.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/873.png"
   },
   {
     "id": "#351",
@@ -2983,7 +2983,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/852.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/852.png"
   },
   {
     "id": "#352",
@@ -2991,7 +2991,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/853.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/853.png"
   },
   {
     "id": "#353",
@@ -2999,7 +2999,7 @@
     "types": [
       "electric"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/871.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/871.png"
   },
   {
     "id": "#354",
@@ -3008,7 +3008,7 @@
       "water",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/458.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/458.png"
   },
   {
     "id": "#355",
@@ -3017,7 +3017,7 @@
       "water",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/226.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/226.png"
   },
   {
     "id": "#356",
@@ -3025,7 +3025,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/320.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/320.png"
   },
   {
     "id": "#357",
@@ -3033,7 +3033,7 @@
     "types": [
       "water"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/321.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/321.png"
   },
   {
     "id": "#358",
@@ -3041,7 +3041,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/712.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/712.png"
   },
   {
     "id": "#359",
@@ -3049,7 +3049,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/713.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/713.png"
   },
   {
     "id": "#360",
@@ -3058,7 +3058,7 @@
       "ghost",
       "grass"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/781.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/781.png"
   },
   {
     "id": "#361",
@@ -3067,7 +3067,7 @@
       "water",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/131.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/131.png"
   },
   {
     "id": "#362",
@@ -3076,7 +3076,7 @@
       "rock",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/337.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/337.png"
   },
   {
     "id": "#363",
@@ -3085,7 +3085,7 @@
       "rock",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/338.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/338.png"
   },
   {
     "id": "#364",
@@ -3094,7 +3094,7 @@
       "psychic",
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/439.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/439.png"
   },
   {
     "id": "#365",
@@ -3103,7 +3103,7 @@
       "ice",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/122-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/122-g.png"
   },
   {
     "id": "#366",
@@ -3112,7 +3112,7 @@
       "ice",
       "psychic"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/866.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/866.png"
   },
   {
     "id": "#367",
@@ -3120,7 +3120,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/554-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/554-g.png"
   },
   {
     "id": "#368",
@@ -3128,7 +3128,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/555-g.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/555-g.png"
   },
   {
     "id": "#369",
@@ -3136,7 +3136,7 @@
     "types": [
       "rock"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/874.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/874.png"
   },
   {
     "id": "#370",
@@ -3144,7 +3144,7 @@
     "types": [
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/875.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/875.png"
   },
   {
     "id": "#371",
@@ -3153,7 +3153,7 @@
       "steel",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/884.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/884.png"
   },
   {
     "id": "#372",
@@ -3162,7 +3162,7 @@
       "electric",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/479.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/479.png"
   },
   {
     "id": "#373",
@@ -3170,7 +3170,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/132.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/132.png"
   },
   {
     "id": "#374",
@@ -3179,7 +3179,7 @@
       "electric",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/880.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/880.png"
   },
   {
     "id": "#375",
@@ -3188,7 +3188,7 @@
       "electric",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/881.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/881.png"
   },
   {
     "id": "#376",
@@ -3197,7 +3197,7 @@
       "water",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/882.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/882.png"
   },
   {
     "id": "#377",
@@ -3206,7 +3206,7 @@
       "water",
       "ice"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/883.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/883.png"
   },
   {
     "id": "#378",
@@ -3214,7 +3214,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/004.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/004.png"
   },
   {
     "id": "#379",
@@ -3222,7 +3222,7 @@
     "types": [
       "fire"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/005.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/005.png"
   },
   {
     "id": "#380",
@@ -3231,7 +3231,7 @@
       "fire",
       "flying"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/006.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/006.png"
   },
   {
     "id": "#381",
@@ -3239,7 +3239,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/772.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/772.png"
   },
   {
     "id": "#382",
@@ -3247,7 +3247,7 @@
     "types": [
       "normal"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/773.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/773.png"
   },
   {
     "id": "#383",
@@ -3256,7 +3256,7 @@
       "rock",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/246.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/246.png"
   },
   {
     "id": "#384",
@@ -3265,7 +3265,7 @@
       "rock",
       "ground"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/247.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/247.png"
   },
   {
     "id": "#385",
@@ -3274,7 +3274,7 @@
       "rock",
       "dark"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/248.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/248.png"
   },
   {
     "id": "#386",
@@ -3283,7 +3283,7 @@
       "dark",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/633.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/633.png"
   },
   {
     "id": "#387",
@@ -3292,7 +3292,7 @@
       "dark",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/634.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/634.png"
   },
   {
     "id": "#388",
@@ -3301,7 +3301,7 @@
       "dark",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/635.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/635.png"
   },
   {
     "id": "#389",
@@ -3309,7 +3309,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/704.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/704.png"
   },
   {
     "id": "#390",
@@ -3317,7 +3317,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/705.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/705.png"
   },
   {
     "id": "#391",
@@ -3325,7 +3325,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/706.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/706.png"
   },
   {
     "id": "#392",
@@ -3333,7 +3333,7 @@
     "types": [
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/782.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/782.png"
   },
   {
     "id": "#393",
@@ -3342,7 +3342,7 @@
       "dragon",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/783.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/783.png"
   },
   {
     "id": "#394",
@@ -3351,7 +3351,7 @@
       "dragon",
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/784.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/784.png"
   },
   {
     "id": "#395",
@@ -3360,7 +3360,7 @@
       "dragon",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/885.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/885.png"
   },
   {
     "id": "#396",
@@ -3369,7 +3369,7 @@
       "dragon",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/886.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/886.png"
   },
   {
     "id": "#397",
@@ -3378,7 +3378,7 @@
       "dragon",
       "ghost"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/887.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/887.png"
   },
   {
     "id": "#398",
@@ -3386,7 +3386,7 @@
     "types": [
       "fairy"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/888.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/888.png"
   },
   {
     "id": "#399",
@@ -3394,7 +3394,7 @@
     "types": [
       "fighting"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/889.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/889.png"
   },
   {
     "id": "#400",
@@ -3403,6 +3403,6 @@
       "poison",
       "dragon"
     ],
-    "url": "https://www.serebii.net/swordshield/pokemon/small/890.png"
+    "url": "https://www.serebii.net/swordshield/pokemon/890.png"
   }
 ]
