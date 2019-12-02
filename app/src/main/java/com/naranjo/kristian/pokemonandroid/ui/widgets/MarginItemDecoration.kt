@@ -4,14 +4,25 @@ import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
-class MarginItemDecoration(private val spaceHeight: Int) : RecyclerView.ItemDecoration() {
-    override fun getItemOffsets(outRect: Rect, view: View,
-                                parent: RecyclerView, state: RecyclerView.State) {
+class MarginItemDecoration(private val spaceHeight: Int, private val orientation: Orientation) :
+    RecyclerView.ItemDecoration() {
+    enum class Orientation {
+        HORIZONTAL,
+        VERTICAL
+    }
+
+    override fun getItemOffsets(
+        outRect: Rect, view: View,
+        parent: RecyclerView, state: RecyclerView.State
+    ) {
         with(outRect) {
-            if (parent.getChildAdapterPosition(view) == 0) {
+            val adapterPosition = parent.getChildAdapterPosition(view)
+            if (adapterPosition == 0 && orientation == Orientation.VERTICAL || orientation == Orientation.HORIZONTAL) {
                 top = spaceHeight
             }
-            left =  spaceHeight
+            if (adapterPosition == 0 && orientation == Orientation.HORIZONTAL || orientation == Orientation.VERTICAL) {
+                left = spaceHeight
+            }
             right = spaceHeight
             bottom = spaceHeight
         }

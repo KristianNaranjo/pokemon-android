@@ -3,4 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="fireRed">#ef7400</color>
+    <color name="iceBlue">#51c4e9</color>
+    <color name="fairyPink">#fdb9e9</color>
+    <color name="metalGrey">#a0b6b7</color>
+    <color name="poisonPurple">#b178ca</color>
+    <color name="dragonBlue">#6b22fd</color>
+    <color name="bugGreen">#a9b900</color>
+    <color name="darkBrown">#6d5848</color>
 </resources>

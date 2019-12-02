@@ -2,23 +2,27 @@ package com.naranjo.kristian.pokemonandroid.ui.pokedex
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.jakewharton.rxbinding3.widget.queryTextChanges
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
+import io.reactivex.rxkotlin.plusAssign
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexActivity : BaseActivity() {
 
-    override val layoutResId: Int = R.layout.activity_main
+    override val layoutResId: Int = R.layout.activity_pokedex
 
     private val viewModel: PokedexViewModel by viewModel()
 
     private lateinit var pokemonList: RecyclerView
+    private lateinit var searchBar: SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,16 +33,26 @@ class PokedexActivity : BaseActivity() {
         viewModel.apply {
             pokemonListData.observe(
                 this@PokedexActivity,
-                Observer { pokemonListAdapter.submitList(it) }
+                Observer {
+                    pokemonListAdapter.submitList(it)
+                }
             )
         }
+    }
+
+    override fun onStart() {
+        super.onStart()
+
+        disposables += searchBar.queryTextChanges()
+            .subscribe { viewModel.onSearchQueryEntered(it.toString()) }
     }
 
     override fun bindViews() {
         pokemonList = findViewById<RecyclerView>(R.id.pokemon_list).apply {
             layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
-            addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt()))
+            addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt(), MarginItemDecoration.Orientation.VERTICAL))
         }
+        searchBar = findViewById(R.id.search_bar)
     }
 
     private fun onPokedexEntryClicked(pokemon: Pokemon) {

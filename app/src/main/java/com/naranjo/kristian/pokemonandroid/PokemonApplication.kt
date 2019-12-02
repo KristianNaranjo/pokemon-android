@@ -4,7 +4,6 @@ import android.app.Application
 import coil.Coil
 import coil.ImageLoader
 import coil.util.CoilUtils
-import com.naranjo.kristian.pokemonandroid.datastore.MockPokemonDataStore
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStoreImpl
 import com.naranjo.kristian.pokemonandroid.ui.pokedex.PokedexViewModel

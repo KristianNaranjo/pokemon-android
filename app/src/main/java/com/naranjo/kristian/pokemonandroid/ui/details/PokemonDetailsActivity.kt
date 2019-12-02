@@ -9,6 +9,7 @@ import coil.api.load
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
 
 class PokemonDetailsActivity : BaseActivity() {
     companion object {
@@ -30,6 +31,7 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonName.text = pokemon.name
         pokemonImage.load(pokemon.imageUrl)
 
+
         val pokemonTypesAdapter = PokemonTypesAdapter()
         pokemonTypes.adapter = pokemonTypesAdapter
         pokemonTypesAdapter.submitList(pokemon.types)
@@ -41,6 +43,12 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonImage = findViewById(R.id.details_image)
         pokemonTypes = findViewById<RecyclerView>(R.id.details_types).apply {
             layoutManager = LinearLayoutManager(this@PokemonDetailsActivity, RecyclerView.HORIZONTAL, false)
+            addItemDecoration(
+                MarginItemDecoration(
+                    resources.getDimension(R.dimen.details_types_spacing).toInt(),
+                    MarginItemDecoration.Orientation.HORIZONTAL
+                )
+            )
         }
     }
 }
