@@ -3,12 +3,23 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="fireRed">#ef7400</color>
-    <color name="iceBlue">#51c4e9</color>
-    <color name="fairyPink">#fdb9e9</color>
-    <color name="metalGrey">#a0b6b7</color>
-    <color name="poisonPurple">#b178ca</color>
-    <color name="dragonBlue">#6b22fd</color>
+
     <color name="bugGreen">#a9b900</color>
     <color name="darkBrown">#6d5848</color>
+    <color name="dragonBlue">#6b22fd</color>
+    <color name="electricYellow">#f8d030</color>
+    <color name="fairyPink">#fdb9e9</color>
+    <color name="fightingMaroon">#c03028</color>
+    <color name="fireRed">#ef7400</color>
+    <color name="flyingPurple">#a890f0</color>
+    <color name="ghostPurple">#705898</color>
+    <color name="grassGreen">#78c850</color>
+    <color name="groundBeige">#e0c068</color>
+    <color name="iceBlue">#51c4e9</color>
+    <color name="normalBrown">#a6a774</color>
+    <color name="poisonPurple">#b178ca</color>
+    <color name="psychicPink">#f85888</color>
+    <color name="rockBrown">#9e8b00</color>
+    <color name="steelGrey">#a0b6b7</color>
+    <color name="waterBlue">#6890f0</color>
 </resources>
