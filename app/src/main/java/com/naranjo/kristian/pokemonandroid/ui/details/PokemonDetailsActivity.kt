@@ -44,10 +44,10 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonTypes = findViewById<RecyclerView>(R.id.details_types).apply {
             layoutManager = LinearLayoutManager(this@PokemonDetailsActivity, RecyclerView.HORIZONTAL, false)
             addItemDecoration(
-                MarginItemDecoration(
-                    resources.getDimension(R.dimen.details_types_spacing).toInt(),
-                    MarginItemDecoration.Orientation.HORIZONTAL
-                )
+                    MarginItemDecoration(
+                            resources.getDimension(R.dimen.details_types_spacing).toInt(),
+                            MarginItemDecoration.Orientation.HORIZONTAL
+                    )
             )
         }
     }

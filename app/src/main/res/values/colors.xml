@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">@color/appThemeRed</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="appThemeRed">#e45d48</color>
 
     <color name="bugGreen">#a9b900</color>
     <color name="darkBrown">#6d5848</color>

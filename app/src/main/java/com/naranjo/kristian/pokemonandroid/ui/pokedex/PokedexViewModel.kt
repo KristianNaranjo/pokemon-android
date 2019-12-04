@@ -41,6 +41,7 @@ class PokedexViewModel(private val pokemonDataStore: PokemonDataStore) : BaseVie
         disposables += searchQuerySubject
                 .skip(1)
                 .debounce(DEBOUNCE_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS)
+                .distinctUntilChanged()
                 .switchMap { Observable.fromCallable { filterPokemon(it) } }
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

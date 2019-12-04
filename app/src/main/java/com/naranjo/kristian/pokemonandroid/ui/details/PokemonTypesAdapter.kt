@@ -11,20 +11,20 @@ import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewHolder
 class PokemonTypesAdapter : BaseListAdapter<Pokemon.Type, String>(Pokemon.Type::name) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<Pokemon.Type> =
-        when (viewType) {
-            R.layout.pokemon_type_item -> PokemonTypeViewHolder(parent, viewType)
-            else -> throw IllegalArgumentException()
-        }
+            when (viewType) {
+                R.layout.pokemon_type_item -> PokemonTypeViewHolder(parent, viewType)
+                else -> throw IllegalArgumentException()
+            }
 
     override fun getItemViewType(position: Int): Int =
-        when (getItem(position)) {
-            is Pokemon.Type -> R.layout.pokemon_type_item
-            else -> 0
-        }
+            when (getItem(position)) {
+                is Pokemon.Type -> R.layout.pokemon_type_item
+                else -> 0
+            }
 }
 
 class PokemonTypeViewHolder(parent: ViewGroup, layoutResId: Int) :
-    BaseViewHolder<Pokemon.Type>(layoutResId, parent) {
+        BaseViewHolder<Pokemon.Type>(layoutResId, parent) {
     lateinit var type: TextView
 
     override fun initViews() {
