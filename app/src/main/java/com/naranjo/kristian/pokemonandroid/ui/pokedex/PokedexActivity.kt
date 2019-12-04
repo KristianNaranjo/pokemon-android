@@ -6,16 +6,13 @@ import android.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.jakewharton.rxbinding3.recyclerview.dataChanges
 import com.jakewharton.rxbinding3.widget.queryTextChanges
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
-import io.reactivex.schedulers.Schedulers
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexActivity : BaseActivity() {
@@ -35,10 +32,10 @@ class PokedexActivity : BaseActivity() {
 
         viewModel.apply {
             pokemonListData.observe(
-                this@PokedexActivity,
-                Observer {
-                    pokemonListAdapter.submitList(it)
-                }
+                    this@PokedexActivity,
+                    Observer {
+                        pokemonListAdapter.submitList(it)
+                    }
             )
         }
     }
@@ -47,7 +44,7 @@ class PokedexActivity : BaseActivity() {
         super.onStart()
 
         disposables += searchBar.queryTextChanges()
-            .subscribe { viewModel.onSearchQueryEntered(it.toString()) }
+                .subscribe { viewModel.onSearchQueryEntered(it.toString()) }
     }
 
     override fun bindViews() {

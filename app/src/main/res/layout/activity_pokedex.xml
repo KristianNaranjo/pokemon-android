@@ -1,64 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:clipToPadding="false"
-        tools:context=".ui.base.BaseActivity">
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    tools:context=".ui.base.BaseActivity">
 
-    <ImageView
-            android:id="@+id/pokedex_action_bar"
-            android:layout_width="0dp"
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/pokedex_actionbar"/>
+            app:layout_scrollFlags="scroll|enterAlways">
 
-    <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            app:layout_constraintStart_toStartOf="@id/pokedex_action_bar"
-            app:layout_constraintTop_toTopOf="@id/pokedex_action_bar"
-            app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"
-            android:src="@drawable/pokemon_actionbar_circles"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/pokedex_halfway_guideline_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent=".5"/>
+                <ImageView
+                    android:id="@+id/pokedex_action_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pokedex_actionbar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    <Space
-            android:id="@+id/pokedex_halfway_guideline_horizontal"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/pokedex_action_bar"
-            app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/pokemon_actionbar_circles"
+                    app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"
+                    app:layout_constraintStart_toStartOf="@id/pokedex_action_bar"
+                    app:layout_constraintTop_toTopOf="@id/pokedex_action_bar" />
 
-    <SearchView
-            android:id="@+id/search_bar"
-            app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"
-            app:layout_constraintEnd_toEndOf="@id/pokedex_action_bar"
-            app:layout_constraintTop_toBottomOf="@id/pokedex_halfway_guideline_horizontal"
-            app:layout_constraintStart_toEndOf="@id/pokedex_halfway_guideline_vertical"
-            android:layout_marginStart="16dp"
-            android:layout_width="0dp"
-            android:layout_height="0dp"/>
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/pokedex_halfway_guideline_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".5" />
+
+                <Space
+                    android:id="@+id/pokedex_halfway_guideline_horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/pokedex_action_bar" />
+
+                <SearchView
+                    android:id="@+id/search_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintBottom_toBottomOf="@id/pokedex_action_bar"
+                    app:layout_constraintEnd_toEndOf="@id/pokedex_action_bar"
+                    app:layout_constraintStart_toEndOf="@id/pokedex_halfway_guideline_vertical"
+                    app:layout_constraintTop_toBottomOf="@id/pokedex_halfway_guideline_horizontal" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <com.naranjo.kristian.pokemonandroid.ui.base.BaseRecyclerView
-            android:id="@+id/pokemon_list"
-            android:layoutAnimation="@anim/layout_animation_up_to_down"
-            app:layout_constraintTop_toBottomOf="@id/pokedex_action_bar"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/pokemon_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutAnimation="@anim/layout_animation_up_to_down"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
