@@ -21,14 +21,14 @@ class PokedexActivity : BaseActivity() {
 
     private val viewModel: PokedexViewModel by viewModel()
 
-    private lateinit var pokemonList: RecyclerView
+    private lateinit var pokedex: RecyclerView
     private lateinit var searchBar: SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val pokemonListAdapter = PokedexAdapter(::onPokedexEntryClicked)
-        pokemonList.adapter = pokemonListAdapter
+        pokedex.adapter = pokemonListAdapter
 
         viewModel.apply {
             pokemonListData.observe(
@@ -48,7 +48,7 @@ class PokedexActivity : BaseActivity() {
     }
 
     override fun bindViews() {
-        pokemonList = findViewById<RecyclerView>(R.id.pokemon_list).apply {
+        pokedex = findViewById<RecyclerView>(R.id.pokemon_list).apply {
             layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
             addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt(), MarginItemDecoration.Orientation.VERTICAL))
         }
