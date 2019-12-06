@@ -12,13 +12,12 @@ data class Pokemon(
         val types: List<Type>,
         @Json(name = "url") val imageUrl: String
 ) : Parcelable {
-    companion object {
-        enum class Type {
-            @Json(name = "bug")
-            BUG {
-                override val colorResId: Int = R.color.bugGreen
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+    enum class Type {
+        @Json(name = "bug")
+        BUG {
+            override val colorResId: Int = R.color.bugGreen
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to SUPER_EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -37,14 +36,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "dark")
-            DARK {
-                override val colorResId: Int = R.color.darkBrown
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "dark")
+        DARK {
+            override val colorResId: Int = R.color.darkBrown
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to NOT_VERY_EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -63,14 +62,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "dragon")
-            DRAGON {
-                override val colorResId: Int = R.color.dragonBlue
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "dragon")
+        DRAGON {
+            override val colorResId: Int = R.color.dragonBlue
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to SUPER_EFFECTIVE,
@@ -89,14 +88,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "electric")
-            ELECTRIC {
-                override val colorResId: Int = R.color.electricYellow
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "electric")
+        ELECTRIC {
+            override val colorResId: Int = R.color.electricYellow
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to NOT_VERY_EFFECTIVE,
@@ -115,14 +114,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to EFFECTIVE,
                         WATER to SUPER_EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "fairy")
-            FAIRY {
-                override val colorResId: Int = R.color.fairyPink
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "fairy")
+        FAIRY {
+            override val colorResId: Int = R.color.fairyPink
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to SUPER_EFFECTIVE,
                         DRAGON to SUPER_EFFECTIVE,
@@ -141,14 +140,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "fighting")
-            FIGHTING {
-                override val colorResId: Int = R.color.fightingMaroon
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "fighting")
+        FIGHTING {
+            override val colorResId: Int = R.color.fightingMaroon
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to NOT_VERY_EFFECTIVE,
                         DARK to SUPER_EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -167,18 +166,18 @@ data class Pokemon(
                         ROCK to SUPER_EFFECTIVE,
                         STEEL to SUPER_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "fire")
-            FIRE {
-                override val colorResId: Int = R.color.fireRed
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "fire")
+        FIRE {
+            override val colorResId: Int = R.color.fireRed
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to SUPER_EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to NOT_VERY_EFFECTIVE,
-                        ELECTRIC  to EFFECTIVE,
+                        ELECTRIC to EFFECTIVE,
                         FAIRY to EFFECTIVE,
                         FIGHTING to EFFECTIVE,
                         FIRE to NOT_VERY_EFFECTIVE,
@@ -193,14 +192,14 @@ data class Pokemon(
                         ROCK to NOT_VERY_EFFECTIVE,
                         STEEL to SUPER_EFFECTIVE,
                         WATER to NOT_VERY_EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "flying")
-            FLYING {
-                override val colorResId: Int = R.color.flyingPurple
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "flying")
+        FLYING {
+            override val colorResId: Int = R.color.flyingPurple
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to SUPER_EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -219,14 +218,14 @@ data class Pokemon(
                         ROCK to NOT_VERY_EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "ghost")
-            GHOST {
-                override val colorResId: Int = R.color.ghostPurple
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "ghost")
+        GHOST {
+            override val colorResId: Int = R.color.ghostPurple
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to NOT_VERY_EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -245,14 +244,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "grass")
-            GRASS {
-                override val colorResId: Int = R.color.grassGreen
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "grass")
+        GRASS {
+            override val colorResId: Int = R.color.grassGreen
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to NOT_VERY_EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to NOT_VERY_EFFECTIVE,
@@ -271,14 +270,14 @@ data class Pokemon(
                         ROCK to SUPER_EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to SUPER_EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "ground")
-            GROUND {
-                override val colorResId: Int = R.color.groundBeige
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "ground")
+        GROUND {
+            override val colorResId: Int = R.color.groundBeige
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to NOT_VERY_EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -297,14 +296,14 @@ data class Pokemon(
                         ROCK to SUPER_EFFECTIVE,
                         STEEL to SUPER_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "ice")
-            ICE {
-                override val colorResId: Int = R.color.iceBlue
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "ice")
+        ICE {
+            override val colorResId: Int = R.color.iceBlue
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to SUPER_EFFECTIVE,
@@ -323,14 +322,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to NOT_VERY_EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "normal")
-            NORMAL {
-                override val colorResId: Int = R.color.normalBrown
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "normal")
+        NORMAL {
+            override val colorResId: Int = R.color.normalBrown
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -349,14 +348,14 @@ data class Pokemon(
                         ROCK to NOT_VERY_EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "poison")
-            POISON {
-                override val colorResId: Int = R.color.poisonPurple
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "poison")
+        POISON {
+            override val colorResId: Int = R.color.poisonPurple
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -375,14 +374,14 @@ data class Pokemon(
                         ROCK to NOT_VERY_EFFECTIVE,
                         STEEL to NO_EFFECT,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "psychic")
-            PSYCHIC {
-                override val colorResId: Int = R.color.psychicPink
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "psychic")
+        PSYCHIC {
+            override val colorResId: Int = R.color.psychicPink
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to NO_EFFECT,
                         DRAGON to EFFECTIVE,
@@ -401,14 +400,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "rock")
-            ROCK {
-                override val colorResId: Int = R.color.rockBrown
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "rock")
+        ROCK {
+            override val colorResId: Int = R.color.rockBrown
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to SUPER_EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -427,14 +426,14 @@ data class Pokemon(
                         ROCK to EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "steel")
-            STEEL {
-                override val colorResId: Int = R.color.steelGrey
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "steel")
+        STEEL {
+            override val colorResId: Int = R.color.steelGrey
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to EFFECTIVE,
@@ -453,14 +452,14 @@ data class Pokemon(
                         ROCK to SUPER_EFFECTIVE,
                         STEEL to NOT_VERY_EFFECTIVE,
                         WATER to NOT_VERY_EFFECTIVE
-                    )
-                }
-            },
-            @Json(name = "water")
-            WATER {
-                override val colorResId: Int = R.color.waterBlue
-                override val typeEffectivenessMap: Map<Type, Float> by lazy {
-                    mapOf(
+                )
+            }
+        },
+        @Json(name = "water")
+        WATER {
+            override val colorResId: Int = R.color.waterBlue
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
                         BUG to EFFECTIVE,
                         DARK to EFFECTIVE,
                         DRAGON to NOT_VERY_EFFECTIVE,
@@ -479,18 +478,26 @@ data class Pokemon(
                         ROCK to SUPER_EFFECTIVE,
                         STEEL to EFFECTIVE,
                         WATER to NOT_VERY_EFFECTIVE
-                    )
-                }
-            };
+                )
+            }
+        };
 
-            abstract val colorResId: Int
-            abstract val typeEffectivenessMap: Map<Type, Float>
+        abstract val colorResId: Int
+        abstract val typeEffectivenessMap: Map<Type, Float>
 
-            companion object {
-                    private const val SUPER_EFFECTIVE = 2.0f
-                    private const val EFFECTIVE = 1.0f
-                    private const val NOT_VERY_EFFECTIVE = 0.5f
-                    private const val NO_EFFECT = 0.0f
+        companion object {
+            private const val SUPER_EFFECTIVE = 2.0f
+            private const val EFFECTIVE = 1.0f
+            private const val NOT_VERY_EFFECTIVE = 0.5f
+            private const val NO_EFFECT = 0.0f
+
+            fun calculateWeaknesses(pokemonTypes: List<Type>): List<Type> {
+                return values()
+                        .filter { type ->
+                            pokemonTypes.fold(1.0f) { acc, pokemonType ->
+                                acc * type.typeEffectivenessMap.getValue(pokemonType)
+                            } >= SUPER_EFFECTIVE
+                        }
             }
         }
     }

@@ -3,7 +3,6 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
 import com.naranjo.kristian.pokemonandroid.R
@@ -20,6 +19,7 @@ class PokemonDetailsActivity : BaseActivity() {
     lateinit var pokemonName: TextView
     lateinit var pokemonImage: ImageView
     lateinit var pokemonTypes: RecyclerView
+    lateinit var pokemonWeaknesses: RecyclerView
 
     override val layoutResId: Int = R.layout.activity_pokemon_details
 
@@ -32,23 +32,23 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonImage.load(pokemon.imageUrl)
 
 
-        val pokemonTypesAdapter = PokemonTypesAdapter()
-        pokemonTypes.adapter = pokemonTypesAdapter
-        pokemonTypesAdapter.submitList(pokemon.types)
+        pokemonTypes.adapter = PokemonTypesAdapter().apply { submitList(pokemon.types) }
+        pokemonWeaknesses.adapter = PokemonTypesAdapter().apply { submitList(Pokemon.Type.calculateWeaknesses(pokemon.types)) }
     }
 
     override fun bindViews() {
         pokemonNumber = findViewById(R.id.details_number)
         pokemonName = findViewById(R.id.details_name)
         pokemonImage = findViewById(R.id.details_image)
+        val marginItemDecoration = MarginItemDecoration(
+                resources.getDimension(R.dimen.details_types_spacing).toInt(),
+                MarginItemDecoration.Orientation.HORIZONTAL
+        )
         pokemonTypes = findViewById<RecyclerView>(R.id.details_types).apply {
-            layoutManager = LinearLayoutManager(this@PokemonDetailsActivity, RecyclerView.HORIZONTAL, false)
-            addItemDecoration(
-                    MarginItemDecoration(
-                            resources.getDimension(R.dimen.details_types_spacing).toInt(),
-                            MarginItemDecoration.Orientation.HORIZONTAL
-                    )
-            )
+            addItemDecoration(marginItemDecoration)
+        }
+        pokemonWeaknesses = findViewById<RecyclerView>(R.id.details_weaknesses).apply {
+            addItemDecoration(marginItemDecoration)
         }
     }
 }
