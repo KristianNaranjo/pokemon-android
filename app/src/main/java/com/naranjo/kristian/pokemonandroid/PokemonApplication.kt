@@ -28,8 +28,8 @@ class PokemonApplication : Application() {
                 crossfade(true)
                 okHttpClient {
                     OkHttpClient.Builder()
-                        .cache(CoilUtils.createDefaultCache(applicationContext))
-                        .build()
+                            .cache(CoilUtils.createDefaultCache(applicationContext))
+                            .build()
                 }
             }
         }

@@ -31,7 +31,6 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonName.text = pokemon.name
         pokemonImage.load(pokemon.imageUrl)
 
-
         pokemonTypes.adapter = PokemonTypesAdapter().apply { submitList(pokemon.types) }
         pokemonWeaknesses.adapter = PokemonTypesAdapter().apply { submitList(Pokemon.Type.calculateWeaknesses(pokemon.types)) }
     }

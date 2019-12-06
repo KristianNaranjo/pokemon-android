@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 abstract class BaseListAdapter<T, IdentifierType>(getId: (T) -> IdentifierType) :
-    ListAdapter<T, BaseViewHolder<T>>(BaseDiffUtil<T, IdentifierType>(getId)) {
+        ListAdapter<T, BaseViewHolder<T>>(BaseDiffUtil<T, IdentifierType>(getId)) {
 
     override fun onBindViewHolder(holder: BaseViewHolder<T>, position: Int) = holder.bindData(getItem(position))
 
@@ -24,11 +24,11 @@ abstract class BaseListAdapter<T, IdentifierType>(getId: (T) -> IdentifierType) 
 
 abstract class BaseViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
     constructor (layoutResId: Int, parent: ViewGroup) : this(
-        LayoutInflater.from(parent.context).inflate(
-            layoutResId,
-            parent,
-            false
-        )
+            LayoutInflater.from(parent.context).inflate(
+                    layoutResId,
+                    parent,
+                    false
+            )
     ) {
         this.initViews()
     }

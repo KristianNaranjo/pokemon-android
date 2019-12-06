@@ -11,11 +11,11 @@ interface PokemonDataStore {
 
 class PokemonDataStoreImpl(context: Context) : PokemonDataStore {
     private val moshi = Moshi.Builder()
-        .add(KotlinJsonAdapterFactory())
-        .build()
+            .add(KotlinJsonAdapterFactory())
+            .build()
 
     private val jsonAdapter =
-        moshi.adapter<List<Pokemon>>(Types.newParameterizedType(List::class.java, Pokemon::class.java))
+            moshi.adapter<List<Pokemon>>(Types.newParameterizedType(List::class.java, Pokemon::class.java))
 
     private val file = "pokemon.json"
 

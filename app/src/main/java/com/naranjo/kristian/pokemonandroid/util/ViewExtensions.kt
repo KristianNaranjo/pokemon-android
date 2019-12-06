@@ -8,4 +8,4 @@ import java.util.concurrent.TimeUnit
 private const val CLICK_THROTTLE_MILLIS = 100L
 
 fun View.toClickObservable(): Observable<Unit> =
-    this.clicks().throttleFirst(CLICK_THROTTLE_MILLIS, TimeUnit.MILLISECONDS)
+        this.clicks().throttleFirst(CLICK_THROTTLE_MILLIS, TimeUnit.MILLISECONDS)

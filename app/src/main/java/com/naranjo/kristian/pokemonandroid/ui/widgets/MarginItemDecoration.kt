@@ -5,15 +5,15 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
 class MarginItemDecoration(private val spaceHeight: Int, private val orientation: Orientation) :
-    RecyclerView.ItemDecoration() {
+        RecyclerView.ItemDecoration() {
     enum class Orientation {
         HORIZONTAL,
         VERTICAL
     }
 
     override fun getItemOffsets(
-        outRect: Rect, view: View,
-        parent: RecyclerView, state: RecyclerView.State
+            outRect: Rect, view: View,
+            parent: RecyclerView, state: RecyclerView.State
     ) {
         with(outRect) {
             val adapterPosition = parent.getChildAdapterPosition(view)
