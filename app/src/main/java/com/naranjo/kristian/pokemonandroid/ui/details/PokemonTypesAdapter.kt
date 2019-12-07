@@ -3,6 +3,7 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 import android.graphics.PorterDuff
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.view.isVisible
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.service.Pokemon.Type.Companion.EFFECTIVE
@@ -54,11 +55,14 @@ class PokemonTypeEffectivenessViewHolder(parent: ViewGroup, layoutResId: Int) :
     override fun bindData(data: TypeEffectivenessItem) {
         val type = data.type
         typeText.text = type.name
-        typeText.background.setColorFilter(typeText.context.getColor(type.colorResId), PorterDuff.Mode.SRC_ATOP)
+        itemView.background.setColorFilter(itemView.context.getColor(type.colorResId), PorterDuff.Mode.SRC_ATOP)
 
         val effectiveness = data.effectiveness
         if ((effectiveness < EFFECTIVE || effectiveness > SUPER_EFFECTIVE) && effectiveness != NO_EFFECT) {
+            effectivenessText.isVisible = true
             effectivenessText.text = itemView.resources.getString(R.string.effectiveness, effectiveness)
+        } else {
+            effectivenessText.isVisible = false
         }
     }
 }

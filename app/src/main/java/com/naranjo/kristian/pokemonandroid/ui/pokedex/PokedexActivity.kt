@@ -11,7 +11,7 @@ import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
-import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
+import com.naranjo.kristian.pokemonandroid.ui.widgets.LinearLayoutMarginItemDecoration
 import io.reactivex.rxkotlin.plusAssign
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -50,7 +50,7 @@ class PokedexActivity : BaseActivity() {
     override fun bindViews() {
         pokedex = findViewById<RecyclerView>(R.id.pokemon_list).apply {
             layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
-            addItemDecoration(MarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt(), MarginItemDecoration.Orientation.VERTICAL))
+            addItemDecoration(LinearLayoutMarginItemDecoration(resources.getDimension(R.dimen.pokedex_items_spacing).toInt(), LinearLayoutMarginItemDecoration.Orientation.VERTICAL))
         }
         searchBar = findViewById(R.id.search_bar)
     }

@@ -9,7 +9,7 @@ import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseListAdapter
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewHolder
-import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration
+import com.naranjo.kristian.pokemonandroid.ui.widgets.LinearLayoutMarginItemDecoration
 
 class PokemonDetailsAdapter : BaseListAdapter<Pokemon, String>(Pokemon::name) {
     companion object {
@@ -38,9 +38,9 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
     private val weaknesses: RecyclerView = itemView.findViewById(R.id.details_weaknesses)
 
     init {
-        val marginItemDecoration = MarginItemDecoration(
+        val marginItemDecoration = LinearLayoutMarginItemDecoration(
             itemView.context.resources.getDimension(R.dimen.details_types_spacing).toInt(),
-            MarginItemDecoration.Orientation.HORIZONTAL
+            LinearLayoutMarginItemDecoration.Orientation.HORIZONTAL
         )
         types.addItemDecoration(marginItemDecoration)
         weaknesses.addItemDecoration(marginItemDecoration)

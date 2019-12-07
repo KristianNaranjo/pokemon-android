@@ -4,7 +4,7 @@ import android.graphics.Rect
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 
-class MarginItemDecoration(private val spaceHeight: Int, private val orientation: Orientation) :
+class LinearLayoutMarginItemDecoration(private val spaceHeight: Int, private val orientation: Orientation) :
         RecyclerView.ItemDecoration() {
     enum class Orientation {
         HORIZONTAL,
