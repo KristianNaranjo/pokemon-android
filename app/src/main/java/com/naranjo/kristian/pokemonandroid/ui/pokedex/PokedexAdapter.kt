@@ -5,7 +5,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import coil.api.load
 import com.naranjo.kristian.pokemonandroid.R
-import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
+import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseListAdapter
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewHolder
 
@@ -30,17 +30,13 @@ class PokedexAdapter(private val onPokemonClickedListener: (Pokemon) -> Unit) :
 
 class PokemonViewHolder(private val onPokemonClickedListener: (Pokemon) -> Unit, parent: ViewGroup, layoutResId: Int) :
         BaseViewHolder<Pokemon>(layoutResId, parent) {
-    lateinit var name: TextView
-    lateinit var number: TextView
-    lateinit var image: ImageView
+    private val name: TextView = itemView.findViewById(R.id.name)
+    private val number: TextView = itemView.findViewById(R.id.number)
+    private val image: ImageView = itemView.findViewById(R.id.image)
 
     private var selectedPokemon: Pokemon? = null
 
-    override fun initViews() {
-        name = itemView.findViewById(R.id.name)
-        number = itemView.findViewById(R.id.number)
-        image = itemView.findViewById(R.id.image)
-
+    init {
         itemView.setOnClickListener {
             selectedPokemon?.let(onPokemonClickedListener)
         }

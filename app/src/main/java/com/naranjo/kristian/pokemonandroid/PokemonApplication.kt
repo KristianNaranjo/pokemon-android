@@ -4,8 +4,8 @@ import android.app.Application
 import coil.Coil
 import coil.ImageLoader
 import coil.util.CoilUtils
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStoreImpl
+import com.naranjo.kristian.pokemonandroid.service.PokemonJsonManager
+import com.naranjo.kristian.pokemonandroid.service.PokemonJsonManagerImpl
 import com.naranjo.kristian.pokemonandroid.ui.pokedex.PokedexViewModel
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidContext
@@ -36,7 +36,7 @@ class PokemonApplication : Application() {
     }
 
     private val pokemonModule = module {
-        single<PokemonDataStore> { PokemonDataStoreImpl(androidContext()) }
+        single<PokemonJsonManager> { PokemonJsonManagerImpl(androidContext()) }
         viewModel { PokedexViewModel(get()) }
     }
 }

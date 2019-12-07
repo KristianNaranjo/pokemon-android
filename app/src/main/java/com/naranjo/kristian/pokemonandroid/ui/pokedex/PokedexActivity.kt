@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jakewharton.rxbinding3.widget.queryTextChanges
 import com.naranjo.kristian.pokemonandroid.R
-import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
+import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.MarginItemDecoration

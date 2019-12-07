@@ -1,15 +1,15 @@
-package com.naranjo.kristian.pokemonandroid.datastore
+package com.naranjo.kristian.pokemonandroid.service
 
 import android.content.Context
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
-interface PokemonDataStore {
+interface PokemonJsonManager {
     val pokemon: List<Pokemon>
 }
 
-class PokemonDataStoreImpl(context: Context) : PokemonDataStore {
+class PokemonJsonManagerImpl(context: Context) : PokemonJsonManager {
     private val moshi = Moshi.Builder()
             .add(KotlinJsonAdapterFactory())
             .build()

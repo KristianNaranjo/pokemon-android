@@ -2,8 +2,8 @@ package com.naranjo.kristian.pokemonandroid.ui.pokedex
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.naranjo.kristian.pokemonandroid.datastore.Pokemon
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
+import com.naranjo.kristian.pokemonandroid.service.Pokemon
+import com.naranjo.kristian.pokemonandroid.service.PokemonJsonManager
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewModel
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -12,7 +12,7 @@ import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import java.util.concurrent.TimeUnit
 
-class PokedexViewModel(private val pokemonDataStore: PokemonDataStore) : BaseViewModel() {
+class PokedexViewModel(private val pokemonJsonManager: PokemonJsonManager) : BaseViewModel() {
     companion object {
         const val DEBOUNCE_TIMEOUT_MILLIS = 350L
     }
@@ -33,7 +33,7 @@ class PokedexViewModel(private val pokemonDataStore: PokemonDataStore) : BaseVie
     }
 
     private fun loadPokemon() {
-        fullPokemonList.addAll(pokemonDataStore.pokemon)
+        fullPokemonList.addAll(pokemonJsonManager.pokemon)
         pokemonList.value = fullPokemonList
     }
 
