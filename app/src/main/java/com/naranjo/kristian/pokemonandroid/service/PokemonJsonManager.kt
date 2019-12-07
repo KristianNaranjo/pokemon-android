@@ -4,9 +4,10 @@ import android.content.Context
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import io.reactivex.Observable
 
 interface PokemonJsonManager {
-    val pokemon: List<Pokemon>
+    val pokemon: Observable<List<Pokemon>>
 }
 
 class PokemonJsonManagerImpl(context: Context) : PokemonJsonManager {
@@ -21,5 +22,5 @@ class PokemonJsonManagerImpl(context: Context) : PokemonJsonManager {
 
     private val pokemonSrc = context.assets.open(file).bufferedReader().use { it.readText() }
 
-    override val pokemon: List<Pokemon> = jsonAdapter.fromJson(pokemonSrc)!!
+    override val pokemon: Observable<List<Pokemon>> = Observable.fromCallable { jsonAdapter.fromJson(pokemonSrc) ?: listOf() }
 }
