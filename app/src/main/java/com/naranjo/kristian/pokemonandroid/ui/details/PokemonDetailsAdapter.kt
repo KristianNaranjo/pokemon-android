@@ -5,6 +5,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import coil.api.load
+import com.google.android.flexbox.FlexDirection
+import com.google.android.flexbox.FlexWrap
+import com.google.android.flexbox.FlexboxLayoutManager
+import com.google.android.flexbox.JustifyContent
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseListAdapter
@@ -16,7 +20,10 @@ class PokemonDetailsAdapter : BaseListAdapter<Pokemon, String>(Pokemon::name) {
         private const val VIEW_TYPE_POKEMON = R.layout.pokemon_details_item
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewTypeOrdinal: Int): BaseViewHolder<Pokemon> =
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewTypeOrdinal: Int
+    ): BaseViewHolder<Pokemon> =
         when (viewTypeOrdinal) {
             VIEW_TYPE_POKEMON -> PokemonDetailsViewHolder(parent, viewTypeOrdinal)
             else -> throw IllegalArgumentException()
@@ -35,7 +42,10 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
     private val name: TextView = itemView.findViewById(R.id.details_name)
     private val image: ImageView = itemView.findViewById(R.id.details_image)
     private val types: RecyclerView = itemView.findViewById(R.id.details_types)
-    private val weaknesses: RecyclerView = itemView.findViewById(R.id.details_weaknesses)
+    private val weaknesses: RecyclerView =
+        itemView.findViewById<RecyclerView>(R.id.details_weaknesses).apply {
+
+        }
 
     init {
         val marginItemDecoration = LinearLayoutMarginItemDecoration(
@@ -44,6 +54,14 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
         )
         types.addItemDecoration(marginItemDecoration)
         weaknesses.addItemDecoration(marginItemDecoration)
+        weaknesses.layoutManager =
+            object : FlexboxLayoutManager(itemView.context, FlexDirection.ROW, FlexWrap.WRAP) {
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }.apply {
+                justifyContent = JustifyContent.CENTER
+            }
     }
 
     override fun bindData(data: Pokemon) {
