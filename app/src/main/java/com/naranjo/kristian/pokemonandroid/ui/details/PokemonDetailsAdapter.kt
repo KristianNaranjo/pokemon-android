@@ -42,10 +42,16 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
     private val name: TextView = itemView.findViewById(R.id.details_name)
     private val image: ImageView = itemView.findViewById(R.id.details_image)
     private val types: RecyclerView = itemView.findViewById(R.id.details_types)
-    private val weaknesses: RecyclerView =
-        itemView.findViewById<RecyclerView>(R.id.details_weaknesses).apply {
+    private val weaknesses: RecyclerView = itemView.findViewById(R.id.details_weaknesses)
+    private val strengths: RecyclerView = itemView.findViewById(R.id.details_strengths)
 
+    private val flexboxLayoutManager get() = object : FlexboxLayoutManager(itemView.context, FlexDirection.ROW, FlexWrap.WRAP) {
+        override fun canScrollVertically(): Boolean {
+            return false
         }
+    }.apply {
+        justifyContent = JustifyContent.CENTER
+    }
 
     init {
         val marginItemDecoration = LinearLayoutMarginItemDecoration(
@@ -54,14 +60,10 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
         )
         types.addItemDecoration(marginItemDecoration)
         weaknesses.addItemDecoration(marginItemDecoration)
-        weaknesses.layoutManager =
-            object : FlexboxLayoutManager(itemView.context, FlexDirection.ROW, FlexWrap.WRAP) {
-                override fun canScrollVertically(): Boolean {
-                    return false
-                }
-            }.apply {
-                justifyContent = JustifyContent.CENTER
-            }
+        strengths.addItemDecoration(marginItemDecoration)
+
+        weaknesses.layoutManager = flexboxLayoutManager
+        strengths.layoutManager = flexboxLayoutManager
     }
 
     override fun bindData(data: Pokemon) {
@@ -76,6 +78,11 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
                     TypeEffectivenessItem(it.key, it.value)
                 }
             )
+        }
+        strengths.adapter = PokemonTypesAdapter().apply {
+            submitList(Pokemon.Type.calculateStrengths(data.types).map {
+                TypeEffectivenessItem(it.key, it.value)
+            })
         }
     }
 }

@@ -7,10 +7,10 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Pokemon(
-        val name: String,
-        @Json(name = "id") val number: String,
-        val types: List<Type>,
-        @Json(name = "url") val imageUrl: String
+    val name: String,
+    @Json(name = "id") val number: String,
+    val types: List<Type>,
+    @Json(name = "url") val imageUrl: String
 ) : Parcelable {
     enum class Type {
         @Json(name = "bug")
@@ -491,11 +491,21 @@ data class Pokemon(
             const val NOT_VERY_EFFECTIVE = 0.5f
             const val NO_EFFECT = 0.0f
 
-            fun calculateWeaknesses(pokemonTypes: List<Type>): Map<Type, Float> {
-                return values()
+            fun calculateWeaknesses(pokemonTypes: List<Type>): Map<Type, Float> =
+                values()
                     .map { type ->
                         type to pokemonTypes.fold(1.0f) { acc, pokemonType ->
                             acc * type.typeEffectivenessMap.getValue(pokemonType)
+                        }
+                    }
+                    .filter { it.second >= SUPER_EFFECTIVE }
+                    .toMap()
+
+            fun calculateStrengths(pokemonTypes: List<Type>): Map<Type, Float> {
+                return values()
+                    .map { type ->
+                        type to pokemonTypes.fold(1.0f) { acc, pokemonType ->
+                            acc * pokemonType.typeEffectivenessMap.getValue(type)
                         }
                     }
                     .filter { it.second >= SUPER_EFFECTIVE }
