@@ -47,6 +47,20 @@
             app:layout_constraintBottom_toBottomOf="@id/details_image"
             tools:text="Alolan Ninetales" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".9"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/details_types"
             android:layout_width="wrap_content"
@@ -54,8 +68,8 @@
             android:layout_marginTop="16dp"
             android:orientation="horizontal"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/vertical_guideline_start"
             app:layout_constraintTop_toBottomOf="@id/details_name"
             tools:itemCount="2"
             tools:listitem="@layout/pokemon_type_item" />
@@ -75,8 +89,8 @@
             android:id="@+id/details_weaknesses"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/vertical_guideline_start"
             app:layout_constraintTop_toBottomOf="@id/weaknesses_text"
             app:layout_constraintWidth_default="wrap"
             tools:itemCount="2"
@@ -89,16 +103,16 @@
             android:layout_marginTop="16dp"
             android:text="@string/strong_against"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/vertical_guideline_start"
             app:layout_constraintTop_toBottomOf="@id/details_weaknesses" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/details_strengths"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/vertical_guideline_end"
+            app:layout_constraintStart_toStartOf="@id/vertical_guideline_start"
             app:layout_constraintTop_toBottomOf="@id/strengths_text"
             app:layout_constraintWidth_default="wrap"
             tools:itemCount="2"

@@ -480,6 +480,31 @@ data class Pokemon(
                     WATER to NOT_VERY_EFFECTIVE
                 )
             }
+        },
+        NA {
+            override val colorResId: Int = R.color.material_grey_800
+            override val typeEffectivenessMap: Map<Type, Float> by lazy {
+                mapOf(
+                    BUG to NO_EFFECT,
+                    DARK to NO_EFFECT,
+                    DRAGON to NO_EFFECT,
+                    ELECTRIC to NO_EFFECT,
+                    FAIRY to NO_EFFECT,
+                    FIGHTING to NO_EFFECT,
+                    FIRE to NO_EFFECT,
+                    FLYING to NO_EFFECT,
+                    GHOST to NO_EFFECT,
+                    GRASS to NO_EFFECT,
+                    GROUND to NO_EFFECT,
+                    ICE to NO_EFFECT,
+                    NORMAL to NO_EFFECT,
+                    POISON to NO_EFFECT,
+                    PSYCHIC to NO_EFFECT,
+                    ROCK to NO_EFFECT,
+                    STEEL to NO_EFFECT,
+                    WATER to NO_EFFECT
+                )
+            }
         };
 
         abstract val colorResId: Int
@@ -493,6 +518,7 @@ data class Pokemon(
 
             fun calculateWeaknesses(pokemonTypes: List<Type>): Map<Type, Float> =
                 values()
+                    .filterNot { it == NA }
                     .map { type ->
                         type to pokemonTypes.fold(1.0f) { acc, pokemonType ->
                             acc * type.typeEffectivenessMap.getValue(pokemonType)
@@ -500,9 +526,11 @@ data class Pokemon(
                     }
                     .filter { it.second >= SUPER_EFFECTIVE }
                     .toMap()
+                    .ifEmpty { mapOf(NA to NO_EFFECT) }
 
             fun calculateStrengths(pokemonTypes: List<Type>): Map<Type, Float> {
                 return values()
+                    .filterNot { it == NA }
                     .map { type ->
                         type to pokemonTypes.fold(1.0f) { acc, pokemonType ->
                             acc * pokemonType.typeEffectivenessMap.getValue(type)
@@ -510,6 +538,7 @@ data class Pokemon(
                     }
                     .filter { it.second >= SUPER_EFFECTIVE }
                     .toMap()
+                    .ifEmpty { mapOf(NA to NO_EFFECT) }
             }
         }
     }

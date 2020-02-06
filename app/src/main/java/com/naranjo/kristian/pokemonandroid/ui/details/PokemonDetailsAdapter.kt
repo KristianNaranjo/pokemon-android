@@ -45,13 +45,12 @@ class PokemonDetailsViewHolder(parent: ViewGroup, layoutResId: Int) :
     private val weaknesses: RecyclerView = itemView.findViewById(R.id.details_weaknesses)
     private val strengths: RecyclerView = itemView.findViewById(R.id.details_strengths)
 
-    private val flexboxLayoutManager get() = object : FlexboxLayoutManager(itemView.context, FlexDirection.ROW, FlexWrap.WRAP) {
-        override fun canScrollVertically(): Boolean {
-            return false
-        }
-    }.apply {
-        justifyContent = JustifyContent.CENTER
-    }
+    private val flexboxLayoutManager
+        get() = object : FlexboxLayoutManager(itemView.context, FlexDirection.ROW, FlexWrap.WRAP) {
+            override fun canScrollVertically(): Boolean {
+                return false
+            }
+        }.apply { justifyContent = JustifyContent.CENTER }
 
     init {
         val marginItemDecoration = LinearLayoutMarginItemDecoration(
