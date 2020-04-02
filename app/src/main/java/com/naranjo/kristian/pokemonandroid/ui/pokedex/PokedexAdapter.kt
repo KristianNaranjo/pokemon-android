@@ -15,9 +15,9 @@ class PokedexAdapter(private val onPokemonClickedListener: (Pokemon) -> Unit) :
         private const val VIEW_TYPE_POKEMON = R.layout.pokemon_row_item
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<Pokemon> =
-            when (viewType) {
-                VIEW_TYPE_POKEMON -> PokemonViewHolder(onPokemonClickedListener, parent, viewType)
+    override fun onCreateViewHolder(parent: ViewGroup, viewTypeOrdinal: Int): BaseViewHolder<Pokemon> =
+            when (viewTypeOrdinal) {
+                VIEW_TYPE_POKEMON -> PokemonViewHolder(onPokemonClickedListener, parent, viewTypeOrdinal)
                 else -> throw IllegalArgumentException()
             }
 

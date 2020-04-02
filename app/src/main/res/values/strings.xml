@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Pokemon</string>
     <string name="effectiveness">%.1fx</string>
-    <string name="weak_to_text">Weak to:</string>
+    <string name="weak_to_text">Weak to</string>
     <string name="strong_against">Strong Against</string>
 </resources>

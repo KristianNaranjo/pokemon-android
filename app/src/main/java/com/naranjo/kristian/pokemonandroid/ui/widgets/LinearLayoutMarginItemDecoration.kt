@@ -17,10 +17,10 @@ class LinearLayoutMarginItemDecoration(private val spaceHeight: Int, private val
     ) {
         with(outRect) {
             val adapterPosition = parent.getChildAdapterPosition(view)
-            if (adapterPosition == 0 && orientation is Orientation.VERTICAL || orientation is Orientation.HORIZONTAL) {
+            if ((adapterPosition == 0 && orientation is Orientation.VERTICAL) || orientation is Orientation.HORIZONTAL) {
                 top = spaceHeight
             }
-            if (adapterPosition == 0 && orientation is Orientation.HORIZONTAL || orientation is Orientation.VERTICAL) {
+            if ((adapterPosition == 0 && orientation is Orientation.HORIZONTAL) || orientation is Orientation.VERTICAL) {
                 left = spaceHeight
             }
             right = spaceHeight

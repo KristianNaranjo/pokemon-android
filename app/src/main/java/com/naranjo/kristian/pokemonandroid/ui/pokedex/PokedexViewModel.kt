@@ -54,9 +54,8 @@ class PokedexViewModel(private val pokemonDataStore: PokemonDataStore) : BaseVie
     }
 
     private fun filterPokemon(query: String): List<Pokemon> =
-            if (query.isBlank()) {
-                fullPokemonList
-            } else {
-                fullPokemonList.filter { it.name.contains(query, ignoreCase = true) }
-            }
+        when {
+            query.isBlank() -> fullPokemonList
+            else -> fullPokemonList.filter { it.name.contains(query, ignoreCase = true) }
+        }
 }
