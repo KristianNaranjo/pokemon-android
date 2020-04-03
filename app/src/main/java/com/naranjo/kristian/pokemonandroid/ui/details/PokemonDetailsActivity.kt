@@ -2,14 +2,10 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.os.Bundle
 import android.widget.TextView
-import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.flexbox.FlexDirection
-import com.google.android.flexbox.FlexWrap
-import com.google.android.flexbox.FlexboxItemDecoration
-import com.google.android.flexbox.FlexboxLayoutManager
+import com.google.android.flexbox.*
 import com.jakewharton.rxbinding3.recyclerview.dataChanges
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
@@ -97,11 +93,12 @@ class PokemonDetailsActivity : BaseActivity() {
                     return false
                 }
             }
+
         val flexboxItemDecoration = FlexboxItemDecoration(this@PokemonDetailsActivity).apply {
             setDrawable(getDrawable(R.drawable.pokemon_details_flexbox_divider))
         }
         types = findViewById<RecyclerView>(R.id.details_types).apply {
-            layoutManager = flexboxLayoutManager()
+            layoutManager = flexboxLayoutManager().apply { justifyContent = JustifyContent.CENTER }
             adapter = PokemonTypesAdapter().apply { typesAdapter = this }
             addItemDecoration(flexboxItemDecoration)
         }
