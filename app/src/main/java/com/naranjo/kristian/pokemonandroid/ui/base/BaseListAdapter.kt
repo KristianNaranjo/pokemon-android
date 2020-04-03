@@ -17,7 +17,7 @@ abstract class BaseListAdapter<T, IdentifierType>(getId: (T) -> IdentifierType) 
 
     class BaseDiffUtil<T, IdentifierType>(private val getId: (T) -> IdentifierType) : DiffUtil.ItemCallback<T>() {
 
-        override fun areItemsTheSame(oldItem: T, newItem: T): Boolean = false
+        override fun areItemsTheSame(oldItem: T, newItem: T): Boolean = getId(oldItem) == getId(newItem)
 
         @SuppressLint("DiffUtilEquals")
         override fun areContentsTheSame(oldItem: T, newItem: T): Boolean = oldItem == newItem
