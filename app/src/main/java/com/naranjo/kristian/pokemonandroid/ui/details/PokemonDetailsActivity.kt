@@ -2,6 +2,7 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.os.Bundle
 import android.widget.TextView
+import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
@@ -19,6 +20,7 @@ import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import org.koin.android.ext.android.inject
 import kotlin.math.abs
+
 
 class PokemonDetailsActivity : BaseActivity() {
     companion object {
@@ -80,6 +82,10 @@ class PokemonDetailsActivity : BaseActivity() {
                 addTransformer(alphaTransformer)
                 addTransformer { page, position ->
                     page.alpha = 1 - abs(position) * .6f
+                }
+                addTransformer { page, position ->
+                    page.scaleX = 1 - abs(position) * .4f
+                    page.scaleY = 1 - abs(position) * .4f
                 }
             })
         }
