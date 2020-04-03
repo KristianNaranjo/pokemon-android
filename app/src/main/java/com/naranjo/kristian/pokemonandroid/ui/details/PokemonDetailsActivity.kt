@@ -2,7 +2,6 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.os.Bundle
 import android.widget.TextView
-import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
@@ -39,13 +38,6 @@ class PokemonDetailsActivity : BaseActivity() {
     private lateinit var weaknessesAdapter: PokemonTypesAdapter
     private lateinit var strengthsAdapter: PokemonTypesAdapter
 
-    private val flexboxLayoutManager
-        get() = object : FlexboxLayoutManager(this, FlexDirection.ROW, FlexWrap.WRAP) {
-            override fun canScrollVertically(): Boolean {
-                return false
-            }
-        }
-
     override val layoutResId: Int = R.layout.activity_pokemon_details
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,25 +69,6 @@ class PokemonDetailsActivity : BaseActivity() {
             }
         })
 
-        val flexboxItemDecoration = FlexboxItemDecoration(this@PokemonDetailsActivity).apply {
-            setDrawable(getDrawable(R.drawable.pokemon_details_flexbox_divider))
-        }
-        weaknesses.apply {
-            layoutManager = flexboxLayoutManager
-            adapter = PokemonTypesAdapter().apply { weaknessesAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
-        }
-        strengths.apply {
-            layoutManager = flexboxLayoutManager
-            adapter = PokemonTypesAdapter().apply { strengthsAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
-        }
-        types.apply {
-            layoutManager = flexboxLayoutManager
-            adapter = PokemonTypesAdapter().apply { typesAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
-        }
-
         bindData(pokemon)
     }
 
@@ -104,29 +77,38 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonImages = findViewById<ViewPager2>(R.id.images).apply {
             offscreenPageLimit = 3
             setPageTransformer(CompositePageTransformer().apply {
-                val pageMarginPx =
-                    resources.getDimensionPixelOffset(R.dimen.details_image_page_margin)
-                val offsetPx = resources.getDimensionPixelOffset(R.dimen.details_image_offset)
-                addTransformer { page, position ->
-                    val offset = position * -(2 * offsetPx + pageMarginPx)
-                    when (pokemonImages.orientation) {
-                        ViewPager2.ORIENTATION_HORIZONTAL -> {
-                            page.translationX =  offset
-                        }
-                        else -> {
-                            page.translationY = offset
-                        }
-                    }
-                }
+                addTransformer(alphaTransformer)
                 addTransformer { page, position ->
                     page.alpha = 1 - abs(position) * .6f
                 }
             })
         }
         number = findViewById(R.id.details_number)
-        types = findViewById(R.id.details_types)
-        weaknesses = findViewById(R.id.details_weaknesses)
-        strengths = findViewById(R.id.details_strengths)
+
+        fun flexboxLayoutManager() =
+            object : FlexboxLayoutManager(this, FlexDirection.ROW, FlexWrap.WRAP) {
+                override fun canScrollVertically(): Boolean {
+                    return false
+                }
+            }
+        val flexboxItemDecoration = FlexboxItemDecoration(this@PokemonDetailsActivity).apply {
+            setDrawable(getDrawable(R.drawable.pokemon_details_flexbox_divider))
+        }
+        types = findViewById<RecyclerView>(R.id.details_types).apply {
+            layoutManager = flexboxLayoutManager()
+            adapter = PokemonTypesAdapter().apply { typesAdapter = this }
+            addItemDecoration(flexboxItemDecoration)
+        }
+        weaknesses = findViewById<RecyclerView>(R.id.details_weaknesses).apply {
+            layoutManager = flexboxLayoutManager()
+            adapter = PokemonTypesAdapter().apply { weaknessesAdapter = this }
+            addItemDecoration(flexboxItemDecoration)
+        }
+        strengths = findViewById<RecyclerView>(R.id.details_strengths).apply {
+            layoutManager = flexboxLayoutManager()
+            adapter = PokemonTypesAdapter().apply { strengthsAdapter = this }
+            addItemDecoration(flexboxItemDecoration)
+        }
     }
 
     private fun bindData(pokemon: Pokemon) {
@@ -142,4 +124,22 @@ class PokemonDetailsActivity : BaseActivity() {
             TypeEffectivenessItem(it.key, it.value)
         })
     }
+
+    private val alphaTransformer: ViewPager2.PageTransformer
+        get() {
+            val offsetPx = resources.getDimensionPixelOffset(R.dimen.details_image_offset)
+            val pageMarginPx = resources.getDimensionPixelOffset(R.dimen.details_image_page_margin)
+
+            return ViewPager2.PageTransformer { page, position ->
+                val offset = position * -(2 * offsetPx + pageMarginPx)
+                when (pokemonImages.orientation) {
+                    ViewPager2.ORIENTATION_HORIZONTAL -> {
+                        page.translationX = offset
+                    }
+                    else -> {
+                        page.translationY = offset
+                    }
+                }
+            }
+        }
 }
