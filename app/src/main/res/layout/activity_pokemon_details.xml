@@ -8,8 +8,9 @@
     <View
         android:id="@+id/background_view"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="0dp"
         android:background="@drawable/upper_left_triangle_red"
+        app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,26 +31,27 @@
         android:id="@+id/images"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="horizontal"
-        android:clipToPadding="false"
         android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="@id/background_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/background_view"
         tools:listitem="@layout/pokemon_image_item" />
 
     <TextView
         android:id="@+id/details_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:gravity="center"
         android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/images"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/images"
         tools:text="Alolan Ninetales" />
 
     <androidx.constraintlayout.widget.Guideline

@@ -11,11 +11,13 @@ import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.ui.widgets.AlphaTransformer
+import com.naranjo.kristian.pokemonandroid.ui.widgets.ScaleTransformer
+import com.naranjo.kristian.pokemonandroid.ui.widgets.TranslationTransformer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.schedulers.Schedulers
 import org.koin.android.ext.android.inject
-import kotlin.math.abs
 
 
 class PokemonDetailsActivity : BaseActivity() {
@@ -75,14 +77,17 @@ class PokemonDetailsActivity : BaseActivity() {
         pokemonImages = findViewById<ViewPager2>(R.id.images).apply {
             offscreenPageLimit = 3
             setPageTransformer(CompositePageTransformer().apply {
-                addTransformer(alphaTransformer)
-                addTransformer { page, position ->
-                    page.alpha = 1 - abs(position) * .6f
-                }
-                addTransformer { page, position ->
-                    page.scaleX = 1 - abs(position) * .4f
-                    page.scaleY = 1 - abs(position) * .4f
-                }
+                val offsetPx = resources.getDimensionPixelOffset(R.dimen.details_image_offset)
+                val marginPx = resources.getDimensionPixelOffset(R.dimen.details_image_page_margin)
+                addTransformer(
+                    TranslationTransformer(
+                        offsetPx,
+                        marginPx,
+                        ViewPager2.ORIENTATION_HORIZONTAL
+                    )
+                )
+                addTransformer(AlphaTransformer(.6f))
+                addTransformer(ScaleTransformer(.4f))
             })
         }
         number = findViewById(R.id.details_number)
@@ -127,22 +132,4 @@ class PokemonDetailsActivity : BaseActivity() {
             TypeEffectivenessItem(it.key, it.value)
         })
     }
-
-    private val alphaTransformer: ViewPager2.PageTransformer
-        get() {
-            val offsetPx = resources.getDimensionPixelOffset(R.dimen.details_image_offset)
-            val pageMarginPx = resources.getDimensionPixelOffset(R.dimen.details_image_page_margin)
-
-            return ViewPager2.PageTransformer { page, position ->
-                val offset = position * -(2 * offsetPx + pageMarginPx)
-                when (pokemonImages.orientation) {
-                    ViewPager2.ORIENTATION_HORIZONTAL -> {
-                        page.translationX = offset
-                    }
-                    else -> {
-                        page.translationY = offset
-                    }
-                }
-            }
-        }
 }

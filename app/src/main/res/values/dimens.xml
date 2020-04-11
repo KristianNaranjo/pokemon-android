@@ -2,7 +2,7 @@
 <resources>
     <dimen name="pokedex_items_spacing">16dp</dimen>
     <dimen name="details_types_spacing">8dp</dimen>
-    <dimen name="details_image_page_margin">40dp</dimen>
+    <dimen name="details_image_page_margin">32dp</dimen>
     <dimen name="details_image_offset">80dp</dimen>
-    <dimen name="details_image_item_offset_and_margin">120dp</dimen>
+    <dimen name="details_image_item_offset_and_margin">88dp</dimen>
 </resources>

@@ -4,5 +4,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginStart="@dimen/details_image_item_offset_and_margin"
-    android:layout_marginEnd="120dp"
+    android:layout_marginEnd="@dimen/details_image_item_offset_and_margin"
     android:contentDescription="@null" />
