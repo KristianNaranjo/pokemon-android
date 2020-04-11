@@ -99,23 +99,17 @@ class PokemonDetailsActivity : BaseActivity() {
                 }
             }
 
-        val flexboxItemDecoration = FlexboxItemDecoration(this@PokemonDetailsActivity).apply {
-            setDrawable(getDrawable(R.drawable.pokemon_details_flexbox_divider))
-        }
         types = findViewById<RecyclerView>(R.id.details_types).apply {
             layoutManager = flexboxLayoutManager().apply { justifyContent = JustifyContent.CENTER }
             adapter = PokemonTypesAdapter().apply { typesAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
         }
         weaknesses = findViewById<RecyclerView>(R.id.details_weaknesses).apply {
             layoutManager = flexboxLayoutManager()
             adapter = PokemonTypesAdapter().apply { weaknessesAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
         }
         strengths = findViewById<RecyclerView>(R.id.details_strengths).apply {
             layoutManager = flexboxLayoutManager()
             adapter = PokemonTypesAdapter().apply { strengthsAdapter = this }
-            addItemDecoration(flexboxItemDecoration)
         }
     }
 
