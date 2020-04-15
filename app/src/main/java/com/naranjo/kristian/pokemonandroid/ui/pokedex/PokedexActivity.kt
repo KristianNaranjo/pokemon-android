@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jakewharton.rxbinding3.widget.queryTextChanges
 import com.naranjo.kristian.pokemonandroid.R
+import com.naranjo.kristian.pokemonandroid.databinding.ActivityPokedexBinding
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
@@ -18,18 +19,28 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexActivity : BaseActivity() {
 
-    override val layoutResId: Int = R.layout.activity_pokedex
-
     private val viewModel: PokedexViewModel by viewModel()
 
-    private lateinit var pokedex: RecyclerView
-    private lateinit var searchBar: SearchView
+    private lateinit var binding: ActivityPokedexBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        binding = ActivityPokedexBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         val pokemonListAdapter = PokedexAdapter(::onPokedexEntryClicked)
-        pokedex.adapter = pokemonListAdapter
+
+        binding.pokemonList.apply {
+            adapter = pokemonListAdapter
+            layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
+            addItemDecoration(
+                LinearLayoutMarginItemDecoration(
+                    resources.getDimension(R.dimen.pokedex_items_spacing).toInt(),
+                    LinearLayoutMarginItemDecoration.Orientation.VERTICAL
+                )
+            )
+        }
 
         viewModel.apply {
             pokemonListData.observe(
@@ -44,24 +55,11 @@ class PokedexActivity : BaseActivity() {
     override fun onStart() {
         super.onStart()
 
-        disposables += searchBar.queryTextChanges()
+        disposables += binding.searchBar.queryTextChanges()
             .subscribe { viewModel.onSearchQueryEntered(it.toString()) }
-        disposables += searchBar.toClickObservable()
+        disposables += binding.searchBar.toClickObservable()
             .map { it as SearchView }
             .subscribe { it.isIconified = false }
-    }
-
-    override fun bindViews() {
-        pokedex = findViewById<RecyclerView>(R.id.pokemon_list).apply {
-            layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
-            addItemDecoration(
-                LinearLayoutMarginItemDecoration(
-                    resources.getDimension(R.dimen.pokedex_items_spacing).toInt(),
-                    LinearLayoutMarginItemDecoration.Orientation.VERTICAL
-                )
-            )
-        }
-        searchBar = findViewById(R.id.search_bar)
     }
 
     private fun onPokedexEntryClicked(pokemon: Pokemon) {

@@ -6,21 +6,11 @@ import io.reactivex.disposables.CompositeDisposable
 
 abstract class BaseActivity : AppCompatActivity() {
 
-    protected abstract val layoutResId: Int
     protected val disposables = CompositeDisposable()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(layoutResId)
-
-        bindViews()
-    }
 
     override fun onStop() {
         disposables.clear()
 
         super.onStop()
     }
-
-    abstract fun bindViews()
 }
