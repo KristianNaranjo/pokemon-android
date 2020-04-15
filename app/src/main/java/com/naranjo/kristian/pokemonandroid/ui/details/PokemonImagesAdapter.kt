@@ -1,9 +1,9 @@
 package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.view.ViewGroup
-import android.widget.ImageView
 import coil.api.load
 import com.naranjo.kristian.pokemonandroid.R
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonImageItemBinding
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseListAdapter
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewHolder
 
@@ -30,10 +30,10 @@ class PokemonImagesAdapter : BaseListAdapter<PokemonImage, String>(PokemonImage:
 
 class PokemonImageViewHolder(parent: ViewGroup, layoutResId: Int) :
     BaseViewHolder<PokemonImage>(layoutResId, parent) {
-    private val image: ImageView = itemView.findViewById(R.id.details_image)
+    private val binding = PokemonImageItemBinding.bind(itemView)
 
     override fun bindData(data: PokemonImage) {
-        image.load(data.url)
+        binding.detailsImage.load(data.url)
     }
 }
 

@@ -1,6 +1,5 @@
 package com.naranjo.kristian.pokemonandroid.ui.base
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import io.reactivex.disposables.CompositeDisposable
 

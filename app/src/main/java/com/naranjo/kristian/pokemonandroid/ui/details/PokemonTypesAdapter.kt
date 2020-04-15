@@ -2,9 +2,10 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.graphics.PorterDuff
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.view.isVisible
 import com.naranjo.kristian.pokemonandroid.R
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeEffectivenessItemBinding
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeItemBinding
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.service.Pokemon.Type.Companion.EFFECTIVE
 import com.naranjo.kristian.pokemonandroid.service.Pokemon.Type.Companion.NO_EFFECT
@@ -47,13 +48,13 @@ class PokemonTypesAdapter : BaseListAdapter<TypeItem, Pokemon.Type>(TypeItem::ty
 
 class PokemonTypeViewHolder(parent: ViewGroup, layoutResId: Int) :
     BaseViewHolder<TypeOnly>(layoutResId, parent) {
-    private val type: TextView = itemView.findViewById(R.id.pokemon_type)
+    private val binding = PokemonTypeItemBinding.bind(itemView)
 
     override fun bindData(data: TypeOnly) {
         val type = data.type
-        this.type.text = type.name
-        this.type.background.setColorFilter(
-            this.type.context.getColor(type.colorResId),
+        binding.pokemonType.text = type.name
+        binding.pokemonType.background.setColorFilter(
+            binding.pokemonType.context.getColor(type.colorResId),
             PorterDuff.Mode.SRC_ATOP
         )
     }
@@ -61,12 +62,11 @@ class PokemonTypeViewHolder(parent: ViewGroup, layoutResId: Int) :
 
 class PokemonTypeEffectivenessViewHolder(parent: ViewGroup, layoutResId: Int) :
     BaseViewHolder<TypeEffectivenessItem>(layoutResId, parent) {
-    private val typeText: TextView = itemView.findViewById(R.id.type)
-    private val effectivenessText: TextView = itemView.findViewById(R.id.effectiveness)
+    private val binding = PokemonTypeEffectivenessItemBinding.bind(itemView)
 
     override fun bindData(data: TypeEffectivenessItem) {
         val type = data.type
-        typeText.text = type.name
+        binding.type.text = type.name
         itemView.background.setColorFilter(
             itemView.context.getColor(type.colorResId),
             PorterDuff.Mode.SRC_ATOP
@@ -74,11 +74,11 @@ class PokemonTypeEffectivenessViewHolder(parent: ViewGroup, layoutResId: Int) :
 
         val effectiveness = data.effectiveness
         if ((effectiveness < EFFECTIVE || effectiveness > SUPER_EFFECTIVE) && effectiveness != NO_EFFECT) {
-            effectivenessText.isVisible = true
-            effectivenessText.text =
+            binding.effectiveness.isVisible = true
+            binding.effectiveness.text =
                 itemView.resources.getString(R.string.effectiveness, effectiveness)
         } else {
-            effectivenessText.isVisible = false
+            binding.effectiveness.isVisible = false
         }
     }
 }

@@ -34,23 +34,23 @@ class PokedexViewModel(private val pokemonDataStore: PokemonDataStore) : BaseVie
 
     private fun loadPokemon() {
         disposables += pokemonDataStore.pokemon
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe {
-                    fullPokemonList.addAll(it)
-                    pokemonList.value = fullPokemonList
-                }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe {
+                fullPokemonList.addAll(it)
+                pokemonList.value = fullPokemonList
+            }
     }
 
     private fun observeQuery() {
         disposables += searchQuerySubject
-                .skip(1)
-                .debounce(DEBOUNCE_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS)
-                .distinctUntilChanged()
-                .switchMap { Observable.fromCallable { filterPokemon(it) } }
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe { filteredPokemon -> pokemonList.value = filteredPokemon }
+            .skip(1)
+            .debounce(DEBOUNCE_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS)
+            .distinctUntilChanged()
+            .switchMap { Observable.fromCallable { filterPokemon(it) } }
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe { filteredPokemon -> pokemonList.value = filteredPokemon }
     }
 
     private fun filterPokemon(query: String): List<Pokemon> =

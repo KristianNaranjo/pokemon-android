@@ -1,12 +1,8 @@
 package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import com.google.android.flexbox.FlexDirection
-import com.google.android.flexbox.FlexWrap
-import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
 import com.jakewharton.rxbinding3.recyclerview.dataChanges
 import com.naranjo.kristian.pokemonandroid.R
