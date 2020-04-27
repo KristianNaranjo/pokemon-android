@@ -1,31 +1,26 @@
 package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.os.Bundle
+import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.flexbox.JustifyContent
-import com.jakewharton.rxbinding3.recyclerview.dataChanges
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.databinding.ActivityPokemonDetailsBinding
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.AlphaTransformer
 import com.naranjo.kristian.pokemonandroid.ui.widgets.CustomFlexboxLayoutMananger
 import com.naranjo.kristian.pokemonandroid.ui.widgets.ScaleTransformer
 import com.naranjo.kristian.pokemonandroid.ui.widgets.TranslationTransformer
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.rxkotlin.plusAssign
-import io.reactivex.schedulers.Schedulers
-import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.getViewModel
+import org.koin.core.parameter.parametersOf
 
 
 class PokemonDetailsActivity : BaseActivity() {
     companion object {
         const val EXTRA_POKEMON = "extraPokemon"
     }
-
-    private val pokemonDataStore: PokemonDataStore by inject()
 
     private lateinit var binding: ActivityPokemonDetailsBinding
     private lateinit var pokemonImages: ViewPager2
@@ -43,28 +38,29 @@ class PokemonDetailsActivity : BaseActivity() {
 
         val pokemon = intent.getParcelableExtra(EXTRA_POKEMON) as Pokemon
 
-        val pokemonList = mutableListOf<Pokemon>()
-        disposables += pokemonDataStore.pokemon
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-            .flatMap {
-                imagesAdapter.submitList(it.map { PokemonImage(it.imageUrl) })
-                pokemonList.addAll(it)
-                imagesAdapter.dataChanges()
-            }
-            .subscribe {
-                pokemonImages.setCurrentItem(pokemonList.indexOfFirst { it == pokemon }, false)
-            }
+        val viewModel = getViewModel<PokemonDetailsViewModel> { parametersOf(pokemon) }
+        with(viewModel) {
+            pokemonImageList.observe(
+                this@PokemonDetailsActivity,
+                Observer { imagesAdapter.submitList(it) }
+            )
+            pokemonImagePosition.observe(
+                this@PokemonDetailsActivity,
+                Observer { pokemonImages.setCurrentItem(it, false) }
+            )
+            currentPokemon.observe(
+                this@PokemonDetailsActivity,
+                Observer { bindData(it) }
+            )
+        }
 
         pokemonImages.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
 
-                bindData(pokemonList[pokemonImages.currentItem])
+                viewModel.onPageUpdated(position)
             }
         })
-
-        bindData(pokemon)
     }
 
     private fun initViews() {
