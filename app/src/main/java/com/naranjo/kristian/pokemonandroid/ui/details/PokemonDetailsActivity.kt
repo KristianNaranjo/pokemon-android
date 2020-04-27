@@ -57,7 +57,6 @@ class PokemonDetailsActivity : BaseActivity() {
             }
 
         pokemonImages.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
-
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
 
@@ -90,17 +89,17 @@ class PokemonDetailsActivity : BaseActivity() {
                 })
             }
 
-            detailsTypes.apply {
+            with(detailsTypes) {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity).apply {
                     justifyContent = JustifyContent.CENTER
                 }
                 adapter = PokemonTypesAdapter().apply { typesAdapter = this }
             }
-            detailsWeaknesses.apply {
+            with(detailsWeaknesses) {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity)
                 adapter = PokemonTypesAdapter().apply { weaknessesAdapter = this }
             }
-            detailsStrengths.apply {
+            with(detailsStrengths) {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity)
                 adapter = PokemonTypesAdapter().apply { strengthsAdapter = this }
             }
