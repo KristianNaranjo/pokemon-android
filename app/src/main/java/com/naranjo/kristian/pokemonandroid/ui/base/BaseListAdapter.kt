@@ -18,16 +18,6 @@ abstract class BaseListAdapter<T, IdentifierType>(getId: (T) -> IdentifierType) 
 
     override fun onBindViewHolder(holder: BaseViewHolder<T>, position: Int) =
         holder.bindData(getItem(position))
-
-    class BaseDiffUtil<T, IdentifierType>(private val getId: (T) -> IdentifierType) :
-        DiffUtil.ItemCallback<T>() {
-
-        override fun areItemsTheSame(oldItem: T, newItem: T): Boolean =
-            getId(oldItem) == getId(newItem)
-
-        @SuppressLint("DiffUtilEquals")
-        override fun areContentsTheSame(oldItem: T, newItem: T): Boolean = oldItem == newItem
-    }
 }
 
 abstract class BaseViewHolder<T>(itemView: View) : RecyclerView.ViewHolder(itemView) {
