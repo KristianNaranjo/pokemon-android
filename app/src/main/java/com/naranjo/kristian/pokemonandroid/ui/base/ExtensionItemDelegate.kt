@@ -21,13 +21,20 @@ class LayoutItemDelegate<I>(
 
     override fun itemType() = type
 
-    override fun createViewHolder(parent: ViewGroup) = BaseExtensionViewHolder<I>(LayoutInflater.from(parent.context).inflate(layoutId, parent))
+    override fun createViewHolder(parent: ViewGroup) = BaseExtensionViewHolder<I>(
+        LayoutInflater.from(parent.context).inflate(layoutId, parent, false)
+    )
 
     override fun bindView(position: Int, item: I, holder: BaseExtensionViewHolder<I>) {
         holder.holdItem = item
     }
 
-    override fun bindView(position: Int, item: I, holder: BaseExtensionViewHolder<I>, payloads: List<Any>) {
+    override fun bindView(
+        position: Int,
+        item: I,
+        holder: BaseExtensionViewHolder<I>,
+        payloads: List<Any>
+    ) {
         holder.holdItem = item
     }
 }
@@ -36,7 +43,8 @@ class CreateItemDelegate<I>(
     private val origin: BaseItemDelegate<I>,
     private val createBlock: BaseExtensionViewHolder<I>.() -> Unit
 ) : BaseItemDelegate<I> by origin {
-    override fun createViewHolder(parent: ViewGroup) = origin.createViewHolder(parent).apply(createBlock)
+    override fun createViewHolder(parent: ViewGroup) =
+        origin.createViewHolder(parent).apply(createBlock)
 }
 
 class BindItemDelegate<I>(
@@ -54,7 +62,12 @@ class BindPayloadsItemDelegate<I>(
     private val bindBlock: BaseExtensionViewHolder<I>.(I, List<Any>) -> Unit
 ) : BaseItemDelegate<I> by origin {
 
-    override fun bindView(position: Int, item: I, holder: BaseExtensionViewHolder<I>, payloads: List<Any>) {
+    override fun bindView(
+        position: Int,
+        item: I,
+        holder: BaseExtensionViewHolder<I>,
+        payloads: List<Any>
+    ) {
         origin.bindView(position, item, holder, payloads)
         holder.holdItem?.let { holder.bindBlock(it, payloads) }
     }
@@ -79,14 +92,20 @@ class ClickableIndexedItemDelegate<I>(
     }
 }
 
-inline fun <reified T> itemDelegate(@LayoutRes layoutId: Int) = LayoutItemDelegate(T::class.java, layoutId)
+inline fun <reified T> itemDelegate(@LayoutRes layoutId: Int) =
+    LayoutItemDelegate(T::class.java, layoutId)
 
-fun <T> BaseItemDelegate<T>.create(block: BaseExtensionViewHolder<T>.() -> Unit) = CreateItemDelegate(this, block)
+fun <T> BaseItemDelegate<T>.create(block: BaseExtensionViewHolder<T>.() -> Unit) =
+    CreateItemDelegate(this, block)
 
-fun <T> BaseItemDelegate<T>.bind(block: BaseExtensionViewHolder<T>.(item: T) -> Unit) = BindItemDelegate(this, block)
+fun <T> BaseItemDelegate<T>.bind(block: BaseExtensionViewHolder<T>.(item: T) -> Unit) =
+    BindItemDelegate(this, block)
 
-fun <T> BaseItemDelegate<T>.bindPayloads(block: BaseExtensionViewHolder<T>.(item: T, payloads: List<Any>) -> Unit) = BindPayloadsItemDelegate(this, block)
+fun <T> BaseItemDelegate<T>.bindPayloads(block: BaseExtensionViewHolder<T>.(item: T, payloads: List<Any>) -> Unit) =
+    BindPayloadsItemDelegate(this, block)
 
-fun <T> BaseItemDelegate<T>.click(clickListener: (T) -> Unit) = ClickableItemDelegate(this, clickListener)
+fun <T> BaseItemDelegate<T>.click(clickListener: (T) -> Unit) =
+    ClickableItemDelegate(this, clickListener)
 
-fun <T> BaseItemDelegate<T>.clickIndexed(clickListener: (T, Int) -> Unit) = ClickableIndexedItemDelegate(this, clickListener)
+fun <T> BaseItemDelegate<T>.clickIndexed(clickListener: (T, Int) -> Unit) =
+    ClickableIndexedItemDelegate(this, clickListener)

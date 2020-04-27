@@ -5,8 +5,8 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
 open class DelegatesAdapter<I : Any>(
-    vararg delegates: ItemDelegate<out I, *>,
-    getId: (I) -> Any
+    getId: (I) -> Any,
+    vararg delegates: ItemDelegate<out I, *>
 ) : ListAdapter<I, RecyclerView.ViewHolder>(BaseDiffUtil<I, Any>(getId)) {
 
     private val delegatesIndexMap: Map<Class<*>, Int>
