@@ -11,16 +11,13 @@ import com.jakewharton.rxbinding3.widget.queryTextChanges
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.databinding.ActivityPokedexBinding
 import com.naranjo.kristian.pokemonandroid.databinding.PokemonRowItemBinding
-import com.naranjo.kristian.pokemonandroid.service.Pokemon
+import com.naranjo.kristian.pokemonandroid.data.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.*
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.LinearLayoutMarginItemDecoration
-import com.naranjo.kristian.pokemonandroid.util.listDataChanges
 import com.naranjo.kristian.pokemonandroid.util.scrollToTopOnDataChanged
 import com.naranjo.kristian.pokemonandroid.util.toClickObservable
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
-import io.reactivex.schedulers.Schedulers
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexActivity : BaseActivity() {

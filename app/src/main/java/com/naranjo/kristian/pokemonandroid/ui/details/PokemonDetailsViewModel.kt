@@ -2,15 +2,15 @@ package com.naranjo.kristian.pokemonandroid.ui.details
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
-import com.naranjo.kristian.pokemonandroid.service.Pokemon
+import com.naranjo.kristian.pokemonandroid.domain.PokemonUseCase
+import com.naranjo.kristian.pokemonandroid.data.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 
-class PokemonDetailsViewModel(pokemon: Pokemon, pokemonDataStore: PokemonDataStore) : BaseViewModel() {
+class PokemonDetailsViewModel(pokemon: Pokemon, pokemonUseCase: PokemonUseCase) : BaseViewModel() {
 
     val pokemonImagePosition: LiveData<Int> = MutableLiveData()
     val pokemonImageList: LiveData<List<PokemonImage>> = MutableLiveData()
@@ -19,7 +19,7 @@ class PokemonDetailsViewModel(pokemon: Pokemon, pokemonDataStore: PokemonDataSto
     private val pokemonList = mutableListOf<Pokemon>()
 
     init {
-        disposables += pokemonDataStore.pokemon
+        disposables += pokemonUseCase.pokemon
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeBy(

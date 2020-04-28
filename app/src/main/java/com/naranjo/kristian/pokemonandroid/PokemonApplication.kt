@@ -4,11 +4,11 @@ import android.app.Application
 import coil.Coil
 import coil.ImageLoader
 import coil.util.CoilUtils
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStore
-import com.naranjo.kristian.pokemonandroid.datastore.PokemonDataStoreImpl
-import com.naranjo.kristian.pokemonandroid.service.Pokemon
-import com.naranjo.kristian.pokemonandroid.service.PokemonJsonManager
-import com.naranjo.kristian.pokemonandroid.service.PokemonJsonManagerImpl
+import com.naranjo.kristian.pokemonandroid.domain.PokemonUseCase
+import com.naranjo.kristian.pokemonandroid.domain.PokemonUseCaseImpl
+import com.naranjo.kristian.pokemonandroid.data.Pokemon
+import com.naranjo.kristian.pokemonandroid.data.PokemonRepository
+import com.naranjo.kristian.pokemonandroid.data.PokemonRepositoryImpl
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsViewModel
 import com.naranjo.kristian.pokemonandroid.ui.pokedex.PokedexViewModel
 import okhttp3.OkHttpClient
@@ -40,8 +40,8 @@ class PokemonApplication : Application() {
     }
 
     private val pokemonModule = module {
-        single<PokemonJsonManager> { PokemonJsonManagerImpl(androidContext()) }
-        single<PokemonDataStore> { PokemonDataStoreImpl(get()) }
+        single<PokemonRepository> { PokemonRepositoryImpl(androidContext()) }
+        single<PokemonUseCase> { PokemonUseCaseImpl(get()) }
         viewModel { PokedexViewModel(get()) }
         viewModel { (pokemon: Pokemon) -> PokemonDetailsViewModel(pokemon, get())}
     }

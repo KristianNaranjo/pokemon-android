@@ -1,4 +1,4 @@
-package com.naranjo.kristian.pokemonandroid.service
+package com.naranjo.kristian.pokemonandroid.data
 
 import android.os.Parcelable
 import com.naranjo.kristian.pokemonandroid.R

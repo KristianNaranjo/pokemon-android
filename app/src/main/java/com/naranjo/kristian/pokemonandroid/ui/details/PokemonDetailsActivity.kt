@@ -14,7 +14,7 @@ import com.naranjo.kristian.pokemonandroid.databinding.ActivityPokemonDetailsBin
 import com.naranjo.kristian.pokemonandroid.databinding.PokemonImageItemBinding
 import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeEffectivenessItemBinding
 import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeItemBinding
-import com.naranjo.kristian.pokemonandroid.service.Pokemon
+import com.naranjo.kristian.pokemonandroid.data.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
 import com.naranjo.kristian.pokemonandroid.ui.base.DelegatesAdapter
 import com.naranjo.kristian.pokemonandroid.ui.base.bind
