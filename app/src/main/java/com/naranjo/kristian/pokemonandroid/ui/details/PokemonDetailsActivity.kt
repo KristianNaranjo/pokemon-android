@@ -1,6 +1,7 @@
 package com.naranjo.kristian.pokemonandroid.ui.details
 
 import android.graphics.PorterDuff
+import android.graphics.PorterDuffColorFilter
 import android.os.Bundle
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
@@ -149,7 +150,7 @@ class PokemonDetailsActivity : BaseActivity() {
                 val type = it.type
                 with(binding) {
                     pokemonType.text = type.name
-                    pokemonType.background.setColorFilter(
+                    pokemonType.background.colorFilter = PorterDuffColorFilter(
                         binding.pokemonType.context.getColor(type.colorResId),
                         PorterDuff.Mode.SRC_ATOP
                     )
@@ -163,7 +164,7 @@ class PokemonDetailsActivity : BaseActivity() {
                 val type = it.type
 
                 binding.type.text = type.name
-                itemView.background.setColorFilter(
+                itemView.background.colorFilter = PorterDuffColorFilter(
                     itemView.context.getColor(type.colorResId),
                     PorterDuff.Mode.SRC_ATOP
                 )
