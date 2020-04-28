@@ -1,14 +1,23 @@
 package com.naranjo.kristian.pokemonandroid.ui.details
 
+import android.graphics.PorterDuff
 import android.os.Bundle
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import coil.api.load
 import com.google.android.flexbox.JustifyContent
 import com.naranjo.kristian.pokemonandroid.R
 import com.naranjo.kristian.pokemonandroid.databinding.ActivityPokemonDetailsBinding
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonImageItemBinding
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeEffectivenessItemBinding
+import com.naranjo.kristian.pokemonandroid.databinding.PokemonTypeItemBinding
 import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.BaseActivity
+import com.naranjo.kristian.pokemonandroid.ui.base.DelegatesAdapter
+import com.naranjo.kristian.pokemonandroid.ui.base.bind
+import com.naranjo.kristian.pokemonandroid.ui.base.itemDelegate
 import com.naranjo.kristian.pokemonandroid.ui.widgets.AlphaTransformer
 import com.naranjo.kristian.pokemonandroid.ui.widgets.CustomFlexboxLayoutMananger
 import com.naranjo.kristian.pokemonandroid.ui.widgets.ScaleTransformer
@@ -25,10 +34,10 @@ class PokemonDetailsActivity : BaseActivity() {
     private lateinit var binding: ActivityPokemonDetailsBinding
     private lateinit var pokemonImages: ViewPager2
 
-    private lateinit var imagesAdapter: PokemonImagesAdapter
-    private lateinit var typesAdapter: PokemonTypesAdapter
-    private lateinit var weaknessesAdapter: PokemonTypesAdapter
-    private lateinit var strengthsAdapter: PokemonTypesAdapter
+    private lateinit var imagesAdapter: DelegatesAdapter<PokemonImage>
+    private lateinit var typesAdapter: DelegatesAdapter<TypeItem>
+    private lateinit var weaknessesAdapter: DelegatesAdapter<TypeItem>
+    private lateinit var strengthsAdapter: DelegatesAdapter<TypeItem>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -65,7 +74,7 @@ class PokemonDetailsActivity : BaseActivity() {
 
     private fun initViews() {
         with(binding) {
-            imagesAdapter = PokemonImagesAdapter()
+            imagesAdapter = DelegatesAdapter(PokemonImage::url, pokemonImageDelegate())
             pokemonImages = images.apply {
                 adapter = imagesAdapter
                 offscreenPageLimit = 3
@@ -89,15 +98,23 @@ class PokemonDetailsActivity : BaseActivity() {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity).apply {
                     justifyContent = JustifyContent.CENTER
                 }
-                adapter = PokemonTypesAdapter().apply { typesAdapter = this }
+                adapter = DelegatesAdapter<TypeItem>(TypeItem::type, pokemonTypeDelegate()).apply {
+                    typesAdapter = this
+                }
             }
             with(detailsWeaknesses) {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity)
-                adapter = PokemonTypesAdapter().apply { weaknessesAdapter = this }
+                adapter = DelegatesAdapter<TypeItem>(
+                    TypeItem::type,
+                    pokemonTypeEffectivenessDelegate()
+                ).apply { weaknessesAdapter = this }
             }
             with(detailsStrengths) {
                 layoutManager = CustomFlexboxLayoutMananger(this@PokemonDetailsActivity)
-                adapter = PokemonTypesAdapter().apply { strengthsAdapter = this }
+                adapter = DelegatesAdapter<TypeItem>(
+                    TypeItem::type,
+                    pokemonTypeEffectivenessDelegate()
+                ).apply { strengthsAdapter = this }
             }
         }
     }
@@ -117,4 +134,54 @@ class PokemonDetailsActivity : BaseActivity() {
             })
         }
     }
+
+    private fun pokemonImageDelegate() =
+        itemDelegate<PokemonImage>(R.layout.pokemon_image_item)
+            .bind {
+                val binding = PokemonImageItemBinding.bind(itemView)
+                binding.detailsImage.load(it.url)
+            }
+
+    private fun pokemonTypeDelegate() =
+        itemDelegate<TypeOnly>(R.layout.pokemon_type_item)
+            .bind {
+                val binding = PokemonTypeItemBinding.bind(itemView)
+                val type = it.type
+                with(binding) {
+                    pokemonType.text = type.name
+                    pokemonType.background.setColorFilter(
+                        binding.pokemonType.context.getColor(type.colorResId),
+                        PorterDuff.Mode.SRC_ATOP
+                    )
+                }
+            }
+
+    private fun pokemonTypeEffectivenessDelegate() =
+        itemDelegate<TypeEffectivenessItem>(R.layout.pokemon_type_effectiveness_item)
+            .bind {
+                val binding = PokemonTypeEffectivenessItemBinding.bind(itemView)
+                val type = it.type
+
+                binding.type.text = type.name
+                itemView.background.setColorFilter(
+                    itemView.context.getColor(type.colorResId),
+                    PorterDuff.Mode.SRC_ATOP
+                )
+
+                val effectiveness = it.effectiveness
+                if ((effectiveness < Pokemon.Type.EFFECTIVE || effectiveness > Pokemon.Type.SUPER_EFFECTIVE) && effectiveness != Pokemon.Type.NO_EFFECT) {
+                    binding.effectiveness.isVisible = true
+                    binding.effectiveness.text =
+                        itemView.resources.getString(R.string.effectiveness, effectiveness)
+                } else {
+                    binding.effectiveness.isVisible = false
+                }
+            }
 }
+
+data class PokemonImage(val url: String)
+
+sealed class TypeItem(open val type: Pokemon.Type)
+data class TypeOnly(override val type: Pokemon.Type) : TypeItem(type)
+data class TypeEffectivenessItem(override val type: Pokemon.Type, val effectiveness: Float) :
+    TypeItem(type)

@@ -64,15 +64,13 @@ class PokedexActivity : BaseActivity() {
             .subscribe { it.isIconified = false }
     }
 
-    private fun onPokedexEntryClicked(pokemon: Pokemon) {
-        val intent = Intent(this, PokemonDetailsActivity::class.java)
-        intent.putExtra(PokemonDetailsActivity.EXTRA_POKEMON, pokemon)
-        startActivity(intent)
-    }
-
     private fun pokemonItemDelegate() =
         itemDelegate<Pokemon>(R.layout.pokemon_row_item)
-            .click (::onPokedexEntryClicked)
+            .click {
+                val intent = Intent(this, PokemonDetailsActivity::class.java)
+                intent.putExtra(PokemonDetailsActivity.EXTRA_POKEMON, it)
+                startActivity(intent)
+            }
             .bind {
                 val binding = PokemonRowItemBinding.bind(itemView)
                 with(binding) {

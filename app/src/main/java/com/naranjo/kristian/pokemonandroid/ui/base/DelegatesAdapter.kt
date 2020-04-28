@@ -4,13 +4,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 
-open class DelegatesAdapter<I : Any>(
-    getId: (I) -> Any,
-    vararg delegates: ItemDelegate<out I, *>
-) : ListAdapter<I, RecyclerView.ViewHolder>(BaseDiffUtil<I, Any>(getId)) {
+open class DelegatesAdapter<T : Any>(
+    getId: (T) -> Any,
+    vararg delegates: ItemDelegate<out T, *>
+) : ListAdapter<T, RecyclerView.ViewHolder>(BaseDiffUtil<T, Any>(getId)) {
 
     private val delegatesIndexMap: Map<Class<*>, Int>
-    private val delegatesList: List<ItemDelegate<I, RecyclerView.ViewHolder>>
+    private val delegatesList: List<ItemDelegate<T, RecyclerView.ViewHolder>>
 
     init {
         val map = mutableMapOf<Class<*>, Int>()
@@ -23,7 +23,7 @@ open class DelegatesAdapter<I : Any>(
         delegatesIndexMap = map
         delegatesList = delegates.map {
             @Suppress("UNCHECKED_CAST")
-            it as? ItemDelegate<I, RecyclerView.ViewHolder>
+            it as? ItemDelegate<T, RecyclerView.ViewHolder>
                 ?: throw IllegalArgumentException()
         }
     }
