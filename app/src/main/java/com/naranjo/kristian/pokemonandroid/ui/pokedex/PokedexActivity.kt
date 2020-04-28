@@ -15,8 +15,12 @@ import com.naranjo.kristian.pokemonandroid.service.Pokemon
 import com.naranjo.kristian.pokemonandroid.ui.base.*
 import com.naranjo.kristian.pokemonandroid.ui.details.PokemonDetailsActivity
 import com.naranjo.kristian.pokemonandroid.ui.widgets.LinearLayoutMarginItemDecoration
+import com.naranjo.kristian.pokemonandroid.util.listDataChanges
+import com.naranjo.kristian.pokemonandroid.util.scrollToTopOnDataChanged
 import com.naranjo.kristian.pokemonandroid.util.toClickObservable
+import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.rxkotlin.plusAssign
+import io.reactivex.schedulers.Schedulers
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class PokedexActivity : BaseActivity() {
@@ -33,7 +37,7 @@ class PokedexActivity : BaseActivity() {
 
         val pokemonListAdapter = DelegatesAdapter(Pokemon::name, pokemonItemDelegate())
 
-        binding.pokemonList.apply {
+        with(binding.pokemonList) {
             adapter = pokemonListAdapter
             layoutManager = LinearLayoutManager(this@PokedexActivity, RecyclerView.VERTICAL, false)
             addItemDecoration(
@@ -42,9 +46,10 @@ class PokedexActivity : BaseActivity() {
                     LinearLayoutMarginItemDecoration.Orientation.VERTICAL
                 )
             )
+            scrollToTopOnDataChanged(pokemonListAdapter)
         }
 
-        viewModel.apply {
+        with(viewModel) {
             pokemonListData.observe(
                 this@PokedexActivity,
                 Observer {
